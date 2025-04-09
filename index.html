@@ -1,0 +1,751 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+
+	<title>Nick Charpentier</title>
+    <meta name="description" content="Junior Web Developer from Saskatoon, Canada">
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    
+    <!--Bootstrap CSS-->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+
+    <!--Custom Fonts-->
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=UnifrakturMaguntia&display=swap">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Metal+Mania&display=swap">
+    <link rel="stylesheet" href="http://fonts.googleapis.com/css?family=Open+Sans:400,600,700,800">
+    
+    <!--CSS files-->
+    <link rel="stylesheet" type="text/css" href="css/all.css">
+    <link rel="stylesheet" type="text/css" href="css/w3.css">
+    <link rel="stylesheet" type="text/css" href="css/styles.css">
+    
+    <!--jQuery-->
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    
+    <!--Bootstrap JS-->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
+    
+    <!--Custom Scripts-->
+    <script type="text/javascript" src="js/dicegame.js"></script>
+    <script type="text/javascript" src="js/main.js"></script>
+    <script type="text/javascript" src="js/speedtrainer.js"></script>
+    
+    <!-- PyScript dependencies -->
+    <link rel="stylesheet" href="https://pyscript.net/latest/pyscript.css"/>
+    <script defer src="https://pyscript.net/latest/pyscript.js"></script>
+    
+    <!-- Google reCAPTCHA -->
+    <script src="https://www.google.com/recaptcha/api.js" async defer></script>
+    
+    <link rel="icon" type="image/png" href="images/NC_icon.png"/>
+
+</head>
+
+<body>
+
+<!--NEW Vastlandic NAVBAR boostrap V5.1 FOR EXAMPLE--> 
+<!--COPIED CODE FROM SandlotPHP navbar file, and converted to HTML-->
+
+<nav class="navbar fixed-top navbar-expand-md bg-dark navbar-dark">
+<div class="container-fluid">
+    <a class="navbar-brand" href="index.html">Nick Charpentier</a> 
+	<!--#60b0f4 for the banner logo?-->
+	
+	<button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="fab fa-canadian-maple-leaf fa-2x fa-spin"></span>
+    </button>
+	
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">	
+        <ul class="navbar-nav ms-auto" align="center">
+			
+			<li class="nav-item">
+				<a class="nav-link" href="index.html">
+						About Me
+				</a>
+			</li>
+			
+			<li class="nav-item">
+				<a class="nav-link" href="#skillsCard">
+						Studies
+				</a>
+			</li>
+			
+			<li class="nav-item">
+				
+				<a class="nav-link" href="#projects-sect-divide">
+						Projects
+				</a>
+				
+				
+				<!--
+				<a class="nav-link dropdown-toggle" id="navbarDropdownMenuLink" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+					Projects
+				</a>
+				
+				<ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink" data-bs-popper="none"> <!--Remove navbarDropdownMenuLink?-->
+					
+<!--					
+						<li>
+							<a class="dropdown-item" role="button" href="#gis-maps">
+							<h5>
+							<strong>
+								GIS Map Layouts
+							</strong>
+							</h5>
+							</a>
+						</li>	
+						<div class="dropdown-divider"></div>
+						
+						<li>
+							<a class="dropdown-item" role="button" href="#web-dev">
+							<h5>
+							<strong>
+								Web Dev Projects
+							</strong>
+							</h5>
+							</a>
+						</li>	
+						<div class="dropdown-divider"></div>
+						
+						<li>
+							<a class="dropdown-item" role="button" href="#bonesball">
+							<h5>
+							<strong>
+								BonesBall JS Dice Game
+							</strong>
+							</h5>
+							</a>
+						</li>
+						<div class="dropdown-divider"></div>
+						
+						<li>
+							<a class="dropdown-item" role="button" href="#metronome">
+							<h5>
+							<strong>
+								Speed Trainer JS Metronome
+							</strong>
+							</h5>
+							</a>
+						</li>
+						
+					</ul>
+				
+			</li>
+			
+			-->
+			
+			<li class="nav-item">
+				<a class="nav-link" href="#contact">
+						Contact
+				</a>
+			</li>
+			
+		</ul>
+    </div>
+</div>
+</nav>
+
+<!------------------------------------------------------------------------------------------------------------>
+
+
+<div class="container-fluid" id="tagline" align="center">
+    <h1>GIS Technician</h1>
+	<h1>Drone Operator</h1>
+	<h1>Amateur Web Developer</h1>
+</div>
+
+
+<!------------------------------------------------------------------------------------------------------------>
+
+
+<!--WOLF & ICE SECTION DIVIDERS-->
+
+<div class="container-fluid" id="aboutme-sect-divide" align="center">
+    <img src="images/wolfline.gif" id="dark-train" alt="Wolf GIF">
+</div>
+
+<!--Credit: https://members.tripod.com/darkwolf_grafix/wolfline.gif -->
+
+
+<div class="container-fluid" id="aboutme-sect-divide" align="center">
+    <img src="images/ice2.webp" id="dark-train" alt="Ice GIF">
+</div>
+
+<!--Credit: https://animatedglittergraphics-n-more.tumblr.com/post/688703803044872192/ice-icicle-dividers?is_related_post=1#notes -->
+
+
+
+<!--TECH ALTERNATE SECTION DIVIDERS-->
+<!--
+<div class="container-fluid" id="aboutme-sect-divide" align="center">
+    <img src="images/tech1.webp" id="dark-train" alt="Train GIF">
+</div>
+
+<div class="container-fluid" id="aboutme-sect-divide" align="center">
+    <img src="images/tech4.webp" id="dark-train" alt="Train GIF">
+</div>
+-->
+<!--Credit: https://animatedglittergraphics-n-more.tumblr.com/post/690265649811996672/computer-codetech-dividers -->
+
+<!------------------------------------------------------------------------------------------------------------>
+
+
+<!--ABOUT ME SECTION-->
+
+<div class="container-fluid" id="aboutme">
+    <h2>about me</h2>
+
+
+    <div class="row justify-content-center">
+        <div class="col-8 vertical-center">
+            <p id="aboutmetxt">
+                Hello! My name is Nick Charpentier - a Certified Drone Operator, GIS Technician, and Amateur Web Developer from Saskatoon, Saskatchewan, Canada.
+                <br><br>
+                Welcome to my Geomatics and Web Development ePortfolio, built primarily with HTML, Bootstrap CSS, and jQuery.
+				<!--Will later update to "PHP, Bootstrap CSS, jQuery, and Wordpress Custom Theme Development" after migration-->
+                <br><br>
+                My first introduction to GIS was in 2009 at University of Saskatchewan, sparking a long-standing fascination with mapping, remote sensing, and geospatial analysis. Now after over a decade of sustained curiosity in the subject, I take great pride in pursuing my dream of engaging in impactful, transformative work through a career in GIS. 
+                <br><br>
+                In addition to GIS, I've been a student of front-end web development and server-side programming since 2019. While my strengths are found mostly in front-end development and responsive design, I remain engaged in improving my knowledge of back-end programming (especially Python and SQL), and demonstrating my ability to adapt to unique project requirements.
+				<br><br>
+				In this ePortfolio, I strive to demonstrate the depth of my experience in GIS as well as a thorough approach to web development, both at a Junior level, providing keen attention to detail and creative utilization in geospatial analysis, as well as client-side and server-side languages.
+            </p>
+        </div>
+
+
+<!------------------------------------------------------------------------------------------------------------>
+	
+	
+	<!--BOOTSTRAP V5.1 CAROUSEL FIX-->
+
+<div id="carouselExampleInterval" class="carousel slide col-4 align-middle" data-bs-ride="carousel">
+  <div class="carousel-inner rounded vertical-center">
+        <div class="carousel-item active">
+            <img src="images/Headshot1.jpg" class="d-block w-100 rounded" alt="Image 1">
+        </div>
+        <div class="carousel-item">
+            <img src="images/Headshot2.jpg" class="d-block w-100 rounded" alt="Image 2">
+        </div>
+        <div class="carousel-item">
+            <img src="images/Headshot3.jpg" class="d-block w-100 rounded" alt="Image 3">
+        </div>
+		<div class="carousel-item">
+            <img src="images/Headshot4.jpg" class="d-block w-100 rounded" alt="Image 4">
+        </div>
+		<!--
+		<div class="carousel-item">
+            <img src="images/Headshot5.jpg" class="d-block w-100 rounded" alt="Image 4">
+        </div>
+		<div class="carousel-item">
+            <img src="images/Headshot6.jpg" class="d-block w-100 rounded" alt="Image 4">
+        </div>
+		<div class="carousel-item">
+            <img src="images/Headshot7.jpg" class="d-block w-100 rounded" alt="Image 4">
+        </div>
+		-->
+  </div>
+  <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleInterval" data-bs-slide="prev">
+    <span class="fas fa-arrow-alt-circle-left fa-2x" aria-hidden="true"></span>
+    <span class="visually-hidden">Previous</span>
+  </button>
+  <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleInterval" data-bs-slide="next">
+    <span class="fas fa-arrow-alt-circle-right fa-2x" aria-hidden="true"></span>
+    <span class="visually-hidden">Next</span>
+  </button>
+</div>
+
+
+<!------------------------------------------------------------------------------------------------------------>
+
+    <!--SKILLS SECTION-->
+
+<div>
+    <br>
+
+    <div class="container-fluid card" id="skillsCard">
+        <h2>studies</h2>
+        <div id="skillsContent">
+            <div class="skill-item">
+                <span class="fas fa-globe-americas fa-2x"></span>
+                <div>
+                    <strong>Geomatics:</strong> 
+                    <ul>
+                        <li>Geographic Information Science Certification from Saskatchewan Polytechnic (2024-2025)
+						</li>
+						<li>50+ ESRI Academy ArcGIS Training Certificates (2024-2025)
+						</li>
+						<li>ArcGIS Pro (incl. ModelBuilder geoprocessing), ArcGIS Online, QGIS, AutoCAD, digitization
+						</li>
+						<li>ArcGIS Notebooks, Python, Arcade, SQL programming
+						</li>
+						<li>ArcGIS Survey123 Connect, Field Maps, StoryMaps, Dashboards
+						</li>
+						<li>Remote Sensing, Geospatial data analysis (vector, raster, 3D), Database management
+						</li>
+						<li>MS Office applications: Excel (incl. VBA macros), Word, Outlook, PowerPoint
+						</li>
+						<li>Interpretation of VFR charts and large-scale maps (Topographic, RM, and Forest Stand Type)
+						</li>
+						<li>Large-scale map production, Garmin GPS Receivers, Avenza Maps, compass navigation
+						</li>
+						<li>
+						View my online GIS Maps Portfolio preview in the <a href="#projects-sect-divide"  class="btn btn-success btn-sm" role="button" id="upwork">projects</a> section below
+						</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="skill-item">
+                <span class="fas fa-helicopter fa-2x"></span>
+                <div>
+                    <strong>Certified Drone Operator:</strong> 
+                    <ul>
+                        <li>Transport Canada Pilot Certificate - VLOS Basic Operations
+						</li>
+                        <li>Drone2Map/Pix4D image processing, NAV Drone flight planning, DJI Fly, Map Pilot Pro
+						</li>
+					<!--
+						<li>
+						View my Drone Services and Aerial Photography Portfolio at <a href="https://www.vastlandic.com" target="_blank" class="btn btn-success btn-sm" role="button" id="upwork">Vastlandic.com</a>
+						</li>
+					-->
+                    </ul>
+                </div>
+            </div>
+			<div class="skill-item">
+                <span class="fas fa-laptop-code fa-2x"></span>
+                <div>
+                    <strong>Front-end Development:</strong> 
+                    <ul>
+                        <li>HTML5, CSS3, Javascript, jQuery, Bootstrap5, Twig, ReactJS</li>
+						<li>
+						View my Web Development projects in the <a href="#projects-sect-divide"  class="btn btn-success btn-sm" role="button" id="upwork">projects</a> section below
+						</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="skill-item">
+                <span class="fas fa-server fa-2x"></span>
+                <div>
+                    <strong>Back-end Development:</strong> 
+                    <ul>
+                        <li>PHP, MySQL, Apache, Symfony</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="skill-item">
+                <span class="fab fa-wordpress fa-2x"></span>
+                <div>
+                    <strong>Wordpress CMS Custom Theme Development</strong>
+                </div>
+            </div>
+            <div class="skill-item">
+                <span class="fas fa-university fa-2x"></span>
+                <div>
+                    <strong>Education:</strong>
+                    <ul>
+                        <li>Saskatchewan Polytechnic 2024-2025
+                            <br>
+                            (Geographic Information Science Certification)
+                        </li>
+						<li>Saskatchewan Polytechnic 2013-2015
+                            <br>
+                            (Medical Device Reprocessing Certification)
+                        </li>
+						<li>University of Saskatchewan 2006-2011
+                            <br>
+                            (Geomatics, Psychology, Spanish)
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+<!------------------------------------------------------------------------------------------------------------>
+
+
+<!--SECTION DIVIDER-->
+
+<div class="container-fluid" id="projects-sect-divide"></div>
+
+<!--PROJECTS SECTION-->
+
+<div class="container-fluid" align=center>
+    <h2>projects</h2>
+</div>
+
+
+<!--GIS MAP LAYOUTS Section-->
+
+<div class="container-fluid" align=center id="gis-maps">
+    <!--
+	<h2>gis map layouts</h2>
+	-->
+	<h1 class="text-center mb-4">GIS Map Layouts</h1>
+</div>
+
+<div id="carouselMaps" class="carousel slide col-12 col-md-8 mx-auto" data-bs-ride="carousel">
+  <div class="carousel-inner rounded">
+    <div class="carousel-item active">
+      <div class="map-container">
+        <img src="images/maps/map1.jpg" class="d-block w-100 rounded" alt="Map 1">
+      </div>
+    </div>
+    <div class="carousel-item">
+      <div class="map-container">
+        <img src="images/maps/map2.jpg" class="d-block w-100 rounded" alt="Map 2">
+      </div>
+    </div>
+    <div class="carousel-item">
+      <div class="map-container">
+        <img src="images/maps/map3.jpg" class="d-block w-100 rounded" alt="Map 3">
+      </div>
+    </div>
+	<div class="carousel-item">
+      <div class="map-container">
+        <img src="images/maps/map4.jpg" class="d-block w-100 rounded" alt="Map 4">
+      </div>
+    </div>
+	<div class="carousel-item">
+      <div class="map-container">
+        <img src="images/maps/map5.jpg" class="d-block w-100 rounded" alt="Map 5">
+      </div>
+    </div>
+	<!--Map6 exceeds GitHubs 25mb limit.. need to reduce size before uploading-->
+	<!--
+	<div class="carousel-item">
+      <div class="map-container">
+        <img src="images/maps/map6.jpg" class="d-block w-100 rounded" alt="Map 6">
+      </div>
+    </div>
+	-->
+	<div class="carousel-item">
+      <div class="map-container">
+        <img src="images/maps/map7.jpg" class="d-block w-100 rounded" alt="Map 7">
+      </div>
+    </div>
+	<div class="carousel-item">
+      <div class="map-container">
+        <img src="images/maps/map8.jpg" class="d-block w-100 rounded" alt="Map 8">
+      </div>
+    </div>
+	<div class="carousel-item">
+      <div class="map-container">
+        <img src="images/maps/map9.jpg" class="d-block w-100 rounded" alt="Map 9">
+      </div>
+    </div>
+	<div class="carousel-item">
+      <div class="map-container">
+        <img src="images/maps/map10.jpg" class="d-block w-100 rounded" alt="Map 10">
+      </div>
+    </div>
+	<div class="carousel-item">
+      <div class="map-container">
+        <img src="images/maps/map11.jpg" class="d-block w-100 rounded" alt="Map 11">
+      </div>
+    </div>
+	<div class="carousel-item">
+      <div class="map-container">
+        <img src="images/maps/map12.jpg" class="d-block w-100 rounded" alt="Map 12">
+      </div>
+    </div>
+	<div class="carousel-item">
+      <div class="map-container">
+        <img src="images/maps/map13.jpg" class="d-block w-100 rounded" alt="Map 13">
+      </div>
+    </div>
+	<div class="carousel-item">
+      <div class="map-container">
+        <img src="images/maps/map14.jpg" class="d-block w-100 rounded" alt="Map 14">
+      </div>
+    </div>
+	<div class="carousel-item">
+      <div class="map-container">
+        <img src="images/maps/map15.jpg" class="d-block w-100 rounded" alt="Map 15">
+      </div>
+    </div>
+	<div class="carousel-item">
+      <div class="map-container">
+        <img src="images/maps/map16.jpg" class="d-block w-100 rounded" alt="Map 16">
+      </div>
+    </div>
+    <!-- Add more carousel-items as needed -->
+  </div>
+  <button class="carousel-control-prev" type="button" data-bs-target="#carouselMaps" data-bs-slide="prev">
+    <span class="fas fa-arrow-alt-circle-left fa-2x" aria-hidden="true"></span>
+    <span class="visually-hidden">Previous</span>
+  </button>
+  <button class="carousel-control-next" type="button" data-bs-target="#carouselMaps" data-bs-slide="next">
+    <span class="fas fa-arrow-alt-circle-right fa-2x" aria-hidden="true"></span>
+    <span class="visually-hidden">Next</span>
+  </button>
+</div>
+
+
+
+<hr>
+
+
+
+<div class="container-fluid" align=center id="web-dev">
+    <!--
+	<h2>web dev projects</h2>
+	-->
+	<h1 class="text-center mb-4">Web Dev Projects</h1>
+</div>
+
+
+<!--NEW Bootstrap 5 Accordion Grok FIX-->
+
+<div class="container-fluid" id="projects" align="center">
+    <div class="accordion" id="accordionExample">
+        <div class="accordion-item bg-success text-white">
+            <h5 class="accordion-header" id="headingOne">
+                <button class="accordion-button text-white bg-success collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                    <strong class="w-100 text-center">#1. AllaPratica.com</strong>
+                </button>
+            </h5>
+            <div id="collapseOne" class="accordion-collapse collapse show" aria-labelledby="headingOne" data-bs-parent="#accordionExample">
+                <div class="accordion-body">
+                    A clutter-free website for Classical Guitar lessons, built for a client in Sweden, with Symfony, Twig, Bootstrap, and PHP, to provide a stream-lined, user-friendly experience for her and her students.
+                    <br><br>
+                    <a href="https://AllaPratica.com" target="_blank" class="btn btn-light" role="button">Visit: AllaPratica.com</a>
+                </div>
+            </div>
+        </div>
+
+        <div class="accordion-item bg-success text-white">
+            <h5 class="accordion-header" id="headingTwo">
+                <button class="accordion-button collapsed text-white bg-success" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                    <strong class="w-100 text-center">#2. Vastlandic.com</strong>
+                </button>
+            </h5>
+            <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo" data-bs-parent="#accordionExample">
+                <div class="accordion-body">
+                    Currently undergoing maintenance.
+					<br>
+                    <br>
+					<!--MAIN TEXT WHEN ACTIVE-->
+					<!--
+					Easy-to-navigate website created for my small-scale drone services business, offering aerial photography and video for rooftops, properties, events, and custom projects within 100km of Saskatoon.
+					<!--
+					Later included: Raw PHP Site, with full Bootstrap responsivity, as well as examples of GIS-related projects such as (BVLOS viewshed mission planning, LiDAR analysis, DEM/DSM/DHM creation from existing LiDAR data).
+					-->
+                    <a href="https://nickcharp.github.io/vastlandic" class="btn btn-light" role="button">Visit: Vastlandic.com</a>
+                </div>
+            </div>
+        </div>
+
+        <div class="accordion-item bg-success text-white">
+            <h5 class="accordion-header" id="headingThree">
+                <button class="accordion-button collapsed text-white bg-success" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                    <strong class="w-100 text-center">#3. SaskSandlot.com</strong>
+                </button>
+            </h5>
+            <div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="headingThree" data-bs-parent="#accordionExample">
+                <div class="accordion-body">
+                    Currently undergoing maintenance.
+					<br>
+                    <br>
+					<!--MAIN TEXT WHEN ACTIVE-->
+					<!--
+					Hobby website created for 2-6 player Wiffleball events in Saskatoon, SK., featuring a wind & rain forecast widget, game rules, photos from past events, and my BonesBall javascript text game.
+					<!--
+                    Later: Another Custom Wordpress Theme, created as an additional demonstration of my ability to build Wordpress sites with custom code.
+                    Alternatively: SandlotSports.ca/SoloSports.ca/GoAloneSports.com
+					-->
+                    <a href="https://nickcharp.github.io/sasksandlot" class="btn btn-light" role="button">Visit: SaskSandlot.com</a>
+                </div>
+            </div>
+        </div>
+
+        <!-- Example of adding a fourth item -->
+<!--
+        <div class="accordion-item bg-success text-white">
+            <h5 class="accordion-header" id="headingFour">
+                <button class="accordion-button collapsed text-white bg-success" type="button" data-bs-toggle="collapse" data-bs-target="#collapseFour" aria-expanded="false" aria-controls="collapseFour">
+                    <strong class="w-100 text-center">#4. NewProject.com</strong>
+                </button>
+            </h5>
+            <div id="collapseFour" class="accordion-collapse collapse" aria-labelledby="headingFour" data-bs-parent="#accordionExample">
+                <div class="accordion-body">
+                    Description of your new project goes here.<br>
+                    <br>
+                    <a href="https://newproject.com" class="btn btn-light" role="button">Visit: NewProject.com</a>
+                </div>
+            </div>
+        </div>
+-->
+    </div>
+    <div class="mt-4">
+        <hr>
+    </div>
+</div>
+
+
+
+<!-- Dice Baseball Game -->
+
+<div class="container-fluid" align=center id="bonesball">
+    <!--
+	<h2>"bonesball"</h2>
+	<h2>...a dice baseball game</h2>
+	-->
+	<h1 class="text-center mb-4">BonesBall</h1>
+	<h1 class="text-center mb-4">...a Dice Baseball Game</h1>
+</div>
+
+    <div class="game-container text-center">
+        <div id="gameOutput" class="game-output" style="background-color: black; color: white;"></div>
+        <button id="rollBonesBtn" class="btn btn-success btn-lg mt-3">Roll Your Bones</button>
+    </div>
+
+    <script>
+        $(document).ready(function() {
+            $("#rollBonesBtn").click(function() {
+                rollBones();
+            });
+        });
+    </script>
+
+
+
+<hr>
+
+
+
+<!--SPEED TRAINER METRONOME-->
+
+<!--
+<div class="container-fluid" align=center>
+    <h2>speed trainer metronome</h2>
+</div>
+-->
+
+<div class="container metronome-container" id="metronome">
+    <h1 class="text-center mb-4">Speed Trainer Metronome</h1>
+    
+    <div id="circles" class="text-center mb-4"></div>
+
+    <div class="controls">
+        <div class="row g-3">
+            <div class="col-md-4">
+                <label for="bpm" class="form-label" align="center">BPM: <span id="bpmValue">100</span></label>
+                <input type="range" class="form-range" id="bpm" min="20" max="500" value="100">
+            </div>
+            <div class="col-md-4">
+                <label for="timeSignature" class="form-label" align="center">Time Signature</label>
+                <select class="form-select" id="timeSignature">
+                    <option value="3">3/4</option>
+                    <option value="4" selected>4/4 (Default)</option>
+                    <option value="5">5/4</option>
+                </select>
+            </div>
+            <div class="col-md-4">
+                <label for="tone" class="form-label" align="center">Tone</label>
+                <input type="range" class="form-range" id="tone" min="200" max="1000" value="600">
+            </div>
+        </div>
+
+        <div class="row g-3 mt-3">
+            <div class="col-md-4">
+                <label for="bpmChange" class="form-label" align="center">Tempo Change (BPM)</label>
+                <input type="number" class="form-control" id="bpmChange" min="0" max="50" value="0">
+            </div>
+            <div class="col-md-4">
+                <label for="bars" class="form-label" align="center">Bars per Tempo Change</label>
+                <input type="number" class="form-control" id="bars" min="1" value="4">
+            </div>
+            <div class="col-md-4">
+                <label class="form-label" align="center">Increase or Decrease Tempo?</label>
+                <select class="form-select" id="direction">
+                    <option value="increase">Increase</option>
+                    <option value="decrease">Decrease</option>
+                </select>
+            </div>
+        </div>
+
+        <div class="text-center mt-4">
+            <button id="startStop" class="btn btn-danger">Start</button>
+            <button id="reset" class="btn btn-danger ms-2">Reset</button>
+        </div>
+    </div>
+</div>
+	
+	
+	<hr>
+
+<!------------------------------------------------------------------------------------------------------------>
+
+<!--SECTION DIVIDER-->
+
+<div class="container-fluid" id="contact-sect-divide"></div>
+
+<!--CONTACT INFO SECTION-->
+
+<div class="container-fluid" id="contact" align="center">
+    <h2>contact info</h2>
+    <p>
+        <div class="container-fluid" align="center">
+            <a href="https://linkedin.com/in/nickcharp" target="_blank"><span class="far fa-envelope fa-3x w3-animate-fading"></span></a> <!--Line 117 of w3.css--><!--Add (Optional): class="w3-animate-fading" for visual effect on button.. Line 117 of w3.css-->
+
+            <br>
+            <br>
+            
+
+    <p>Professional Inquiries welcome via LinkedIn 
+	<br>
+	<a href="https://linkedin.com/in/nickcharp"  target="_blank" class="contact btn btn-success btn-sm" role="button" id="email">linkedin.com/in/nickcharp</a>
+    </p>
+    <br>
+    <a href="https://linkedin.com/in/nickcharp" target="_blank"<span class="fab fa-linkedin fa-4x"></span></a>
+    <a href="https://github.com/nickcharp" target="_blank"<span class="fab fa-github-square fa-4x"></span></a>
+</div>
+<br>
+
+<!--Vastlandic.com and Upwork.com-->
+<!--
+<p>You can also Hire Me through
+<a href="https://www.vastlandic.com" target="_blank" class="btn btn-success btn-sm" role="button" id="upwork">Vastlandic.com</a>
+and 
+<a href="https://www.upwork.com/o/profiles/users/~0193638c8b5a0a75ef/" target="_blank" class="btn btn-success btn-sm" role="button" id="upwork">Upwork.com</a>
+</p>
+<br>
+-->
+
+
+
+<br>
+<!--
+<p>Currently based in:</p>
+-->
+<a href="https://goo.gl/maps/cVemMeoeTKpszFke8" target="_blank"><span class="fas fa-igloo fa-3x"></span></a>
+<br>
+
+<p>Saskatoon, Saskatchewan, Canada</p>
+</p>
+
+</div> <!--DO NOT REMOVE THIS DIV... It's the end div for the very beginning <div> above the About Me section-->
+
+<!------------------------------------------------------------------------------------------------------------>
+
+
+<footer>
+    <div id="footertxt">
+        <div align="center">
+            <p>Nick Charpentier &copy; <script>document.write( new Date().getUTCFullYear() );</script></p>
+        </div>
+    </div>
+    <!--<p>
+        <a href="#">Back to top</a>
+    </p>-->
+</footer>
+
+
+</footer>
+
+</body>
+</html>

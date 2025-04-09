@@ -1,0 +1,420 @@
+/*Code extracted from "blog.css" file from original WordPress custom theme*/
+
+
+/* GLOBAL STYLE */
+body {
+    background-color: #000000;
+    color: #ffffff;
+    font-size: 14pt;
+    padding-top: 60px;
+}
+
+canvas {
+    width: 100%; height: 100%
+}
+
+h1 {
+    font-size: 50px;
+    text-align: center;
+    font-family: 'Metal Mania', Verdana, cursive;
+}
+
+h2 {
+    color: limegreen;
+    font-size: 60px;
+    text-align: center;
+    font-family: 'UnifrakturMaguntia', Verdana, cursive;
+}
+
+h3 {
+    color: white;
+    text-align: center;
+}
+
+p {
+    /*font-family: Arial, Helvetica, sans-serif;*/
+    /*font-family: "Arial Black", Gadget, sans-serif;*/
+    font-family: /*"Arial Black",*/ Verdana, Geneva, sans-serif;
+}
+
+ul {
+    /*font-family: Arial, Helvetica, sans-serif;*/
+    font-family: /*"Arial Black",*/ Verdana, Gadget, sans-serif;
+}
+
+.vertical-center {
+    min-height: 100%;
+    display: flex;
+    align-items: center;
+}
+
+.navbar-brand {
+    font-size: 20pt;
+    color: #ffffff;
+    font-family: "Metal Mania", Verdana, cursive;
+}
+
+.nav-link {
+    color: #d3d3d3; /*NOT WORKING*/
+}
+
+
+/*
+.navbar.center .navbar-inner {
+	text-align: center;
+}
+
+.navbar.center .navbar-inner .nav {
+	display:inline-block;
+	float: none;
+	vertical-align: top;
+}
+*/
+
+#jrdev {
+
+}
+
+#tagline {
+    color: darkgrey;
+    /*margin: 3px;*/
+    /*padding-top: 20px;*/
+}
+
+
+#darkbutton {
+    padding-left: 22%;
+    /*padding-right: 10%;*/
+}
+
+.darkmode {
+    background-color: #000000;
+    color: #000000;
+    transition: background-color 1s;
+}
+
+#aboutme-sect-divide {
+    /*padding-top: 42px;*/
+}
+
+#aboutme {
+    background-color: dimgrey;
+    padding-bottom: 15px;
+    /*margin: 40px;*/
+}
+
+#aboutmetxt {
+    font-size: 14pt;
+    /*text-indent: 5%;*/
+}
+
+.carousel {
+    padding-bottom: 20px;
+	/*vertical-align: middle;*/
+}
+
+/*
+#skills-sect-divide {
+	background-color: dimgray;
+	padding-top: 46px;
+}
+*/
+
+/************************************/
+/*Skills section CSS provided by AI*/
+#skillsContent {
+    display: flex;
+    flex-direction: column;
+}
+
+.skill-item {
+    display: flex;
+    align-items: flex-start;
+    margin-bottom: 20px;
+}
+
+.skill-item span {
+    margin-right: 15px;
+    flex-shrink: 0;
+}
+
+.skill-item div {
+    flex-grow: 1;
+}
+/************************************/
+
+#skillsCard {
+    font-size: 15pt;
+    /*color: darkgrey;*/
+    background-color: #1d3030;
+    padding-top: 42px;
+    padding-bottom: 20px;
+}
+
+#skillstxt {
+
+}
+
+
+#projects-sect-divide {
+    padding-top: 46px;
+}
+
+#projects {
+    padding-top: 35px;
+}
+
+
+
+
+/*GIS MAP LAYOUTS SECTIONS*/
+
+.map-container {
+  position: relative;
+  width: 100%;
+  max-width: 850px; /* Approx 11" at 75dpi - adjust as needed */
+  margin: 0 auto;
+  overflow: hidden;
+}
+
+.map-container img {
+  height: auto;
+  object-fit: contain;
+  max-height: 80vh; /* Limits height to 80% of viewport height */
+}
+
+/* Media queries for responsiveness */
+@media (max-width: 768px) {
+  .map-container {
+    max-width: 100%;
+    padding: 0 15px;
+  }
+  
+  .map-container img {
+    max-height: 60vh; /* Smaller height on mobile */
+  }
+}
+
+
+
+
+
+/*bonesball dice baseball*/
+
+.game-container {
+    max-width: 600px;
+    margin: 20px auto;
+}
+
+.game-output {
+    font-family: monospace;
+    background-color: #000000;
+    padding: 10px;
+    border-radius: 5px;
+    min-height: 200px;
+    max-height: 400px;
+    overflow-y: auto;
+    white-space: pre-wrap;
+    text-align: left;
+    color: #ffffff; /* Default text color white */
+}
+
+.text-limegreen {
+    color: #32CD32; /* Custom limegreen for outs and scores */
+}
+
+.btn-primary {
+    padding: 10px 20px;
+}
+
+
+
+
+
+
+/*SPEED TRAINER METRONOME*/
+
+.metronome-container {
+    padding: 20px;
+}
+
+.circle {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    background-color: #495057;
+    margin: 10px;
+    display: inline-block;
+    cursor: pointer;
+    transition: all 0.2s;
+}
+
+.circle.active {
+    background-color: #dc3545; /* Bootstrap danger red */
+}
+
+.circle.emphasis {
+    border: 3px solid #ffc107;
+}
+
+.controls {
+    max-width: 600px;
+    margin: 20px auto;
+}
+
+
+/* Custom slider thumb styling */
+.form-range::-webkit-slider-thumb {
+    background-color: #32CD32; /* Lime green */
+}
+
+.form-range::-moz-range-thumb {
+    background-color: #32CD32; /* Lime green */
+}
+
+.form-range::-ms-thumb {
+    background-color: #32CD32; /* Lime green */
+}
+
+/* Optional: Improve slider appearance */
+.form-range:focus::-webkit-slider-thumb {
+    box-shadow: 0 0 0 1px #fff, 0 0 0 0.25rem rgba(50, 205, 50, 0.25);
+}
+
+.form-range:focus::-moz-range-thumb {
+    box-shadow: 0 0 0 1px #fff, 0 0 0 0.25rem rgba(50, 205, 50, 0.25);
+}
+
+.form-range:focus::-ms-thumb {
+    box-shadow: 0 0 0 1px #fff, 0 0 0 0.25rem rgba(50, 205, 50, 0.25);
+}
+
+
+
+
+
+/*Contact Section*/
+
+#contact-sect-divide {
+    padding-top: 40px;
+}
+
+#contact {
+    background-color: dimgrey;
+    padding-bottom: 15px;
+}
+
+#email {
+    font-size: 14pt;
+}
+
+#upwork {
+    font-size: 14pt;
+}
+
+a.contact {
+    text-decoration: underline;
+    color: #ffffff;
+}
+
+a:hover {
+    color: #28a745; /*Bootstrap "Success" Green Hex*/
+    /*color: color: #42ba96; light green*/
+    /*color: darkgrey;*/
+}
+
+a:active {
+    color: darkgreen;
+}
+
+footer {
+    background-color: darkslategrey;
+    color: #ffffff;
+    margin-top: 30px;
+    position: fixed;
+    left: 0px;
+    bottom: 0px;
+    height: 25px;
+    width: 100%;
+}
+/*Styling for NEW contact form
+#contact {
+    background-color: #f8f9fa; /* Light gray background */
+  /*  padding: 50px 0;
+}
+
+.form-control, .form-select {
+    border-radius: 5px;
+}
+
+.btn-primary {
+    padding: 10px 20px;
+}*/
+
+/*W3 Over-rides*/
+/*Line 117*/
+/*FIX THIS: Not working as an over-ride*/
+.w3-animate-fading, .not-invisible {
+{animation:fading 2s infinite}@keyframes fading{0%{opacity:0}50%{opacity:0.25}100%{opacity:0}};
+}
+
+
+/*Train GIF Color Inversion*/
+.dark-train-gif {
+    filter: invert(1);
+    transition: 1s;
+}
+
+/*
+    .accordion-button {
+        color: #fff;
+        background-color: #198754;
+        text-align: center;
+        justify-content: center;
+        outline: none;
+        border: none;
+        box-shadow: none;
+    }
+    .accordion-button:focus {
+        outline: none;
+        box-shadow: none;
+    }
+    .accordion-button::after {
+        filter: invert(1); /* Inverts the color of the arrow */
+/*
+    }
+    .accordion-button:not(.collapsed) {
+        color: #fff;
+        background-color: #198754;
+    }
+*/
+
+.accordion-button {
+    color: #fff;
+    background-color: #198754;
+    outline: none;
+    border: none;
+    box-shadow: none;
+    display: flex;          
+    align-items: center;    
+    padding: 1rem;          
+}
+
+.accordion-button:focus {
+    outline: none;
+    box-shadow: none;
+}
+
+.accordion-button::after {
+    filter: invert(1);
+}
+
+.accordion-button:not(.collapsed) {
+    color: #fff;
+    background-color: #198754;
+}
+
+/* Accordion bottom margin */
+#accordionExample {
+    margin-bottom: 1.5rem;
+}
