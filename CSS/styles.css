@@ -27,12 +27,6 @@ h3 { color: white; text-align: center; }
 p { font-family: Verdana, Geneva, sans-serif; }
 ul { font-family: Verdana, Gadget, sans-serif; }
 
-.vertical-center {
-    min-height: 100%;
-    display: flex;
-    align-items: center;
-}
-
 /* Navbar */
 .navbar {
     width: 100%;
@@ -70,26 +64,30 @@ ul { font-family: Verdana, Gadget, sans-serif; }
 }
 
 #carouselExampleInterval {
-    margin-bottom: 20px;
     width: 100%;
     max-width: 400px;
-    margin-left: auto;
-    margin-right: auto;
+    margin: 0 auto;
 }
 
 @media (max-width: 767px) {
     #carouselExampleInterval {
-        max-width: 100%;
         margin-bottom: 20px;
     }
     #aboutme .row {
         flex-direction: column;
+    }
+    #aboutme .col-12 {
+        margin-bottom: 20px;
     }
 }
 
 @media (min-width: 768px) {
     #carouselExampleInterval {
         margin-left: 20px;
+    }
+    #aboutme .row {
+        display: flex;
+        align-items: flex-start;
     }
 }
 
@@ -133,6 +131,10 @@ ul { font-family: Verdana, Gadget, sans-serif; }
 
 #projects-sect-divide {
     padding-top: 46px;
+}
+
+#projects .container-fluid {
+    background-color: dimgrey; /* Ensure nested containers match */
 }
 
 /* GIS Map Layouts */
