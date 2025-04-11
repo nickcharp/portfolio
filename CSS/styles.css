@@ -1,16 +1,17 @@
-/*Code extracted from "blog.css" file from original WordPress custom theme*/
-
-
 /* GLOBAL STYLE */
 body {
     background-color: #000000;
     color: #ffffff;
     font-size: 14pt;
     padding-top: 60px;
+    margin: 0;          /* Prevent default margin causing overflow */
+    overflow-x: hidden; /* Stop horizontal scroll on desktop/mobile */
+    box-sizing: border-box; /* Ensure padding doesn’t add to width */
 }
 
 canvas {
-    width: 100%; height: 100%
+    width: 100%;
+    height: 100%;
 }
 
 h1 {
@@ -32,14 +33,11 @@ h3 {
 }
 
 p {
-    /*font-family: Arial, Helvetica, sans-serif;*/
-    /*font-family: "Arial Black", Gadget, sans-serif;*/
-    font-family: /*"Arial Black",*/ Verdana, Geneva, sans-serif;
+    font-family: Verdana, Geneva, sans-serif;
 }
 
 ul {
-    /*font-family: Arial, Helvetica, sans-serif;*/
-    font-family: /*"Arial Black",*/ Verdana, Gadget, sans-serif;
+    font-family: Verdana, Gadget, sans-serif;
 }
 
 .vertical-center {
@@ -48,80 +46,92 @@ ul {
     align-items: center;
 }
 
+/* Navbar */
+.navbar {
+    width: 100%; /* Fit within viewport on all devices */
+    padding-left: 0;
+    padding-right: 0;
+    margin: 0; /* Prevent overflow */
+    box-sizing: border-box; /* Include padding in width */
+}
+
 .navbar-brand {
     font-size: 20pt;
     color: #ffffff;
-    font-family: "Metal Mania", Verdana, cursive;
+    font-family: 'Metal Mania', Verdana, cursive;
+}
+
+.navbar-nav {
+    text-align: center; /* Center links on mobile */
 }
 
 .nav-link {
-    color: #d3d3d3; /*NOT WORKING*/
+    color: #d3d3d3;
 }
 
-
-/*
-.navbar.center .navbar-inner {
-	text-align: center;
+/* Section Divider Images (wolfline.gif, ice2.webp) */
+#aboutme-sect-divide img {
+    max-width: 100%; /* Fit within mobile viewport */
+    height: auto;    /* Maintain aspect ratio */
 }
 
-.navbar.center .navbar-inner .nav {
-	display:inline-block;
-	float: none;
-	vertical-align: top;
-}
-*/
-
-#jrdev {
-
+/* Carousel */
+#carouselExampleInterval {
+    margin-bottom: 20px; /* Space below carousel */
 }
 
-#tagline {
-    color: darkgrey;
-    /*margin: 3px;*/
-    /*padding-top: 20px;*/
+/* Footer */
+footer {
+    background-color: darkslategrey;
+    color: #ffffff;
+    margin: 0; /* No margin to prevent overflow */
+    padding: 0;
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 100%; /* Full width on all devices */
+    height: 25px;
+    box-sizing: border-box; /* Prevent padding overflow */
 }
 
+/* Media Query for Mobile */
+@media (max-width: 768px) {
+    .navbar-brand {
+        font-size: 16pt; /* Smaller on mobile */
+    }
 
-#darkbutton {
-    padding-left: 22%;
-    /*padding-right: 10%;*/
+    .navbar-toggler {
+        margin-right: 10px; /* Prevent overlap */
+    }
+
+    #aboutme-sect-divide img {
+        max-width: 90%; /* Slightly smaller for padding */
+    }
+
+    #tagline h1 {
+        font-size: 30px; /* Reduce size for mobile */
+    }
+
+    #carouselExampleInterval {
+        max-width: 100%; /* Full width on mobile */
+    }
 }
 
-.darkmode {
-    background-color: #000000;
-    color: #000000;
-    transition: background-color 1s;
-}
-
-#aboutme-sect-divide {
-    /*padding-top: 42px;*/
-}
-
+/* Existing styles (unchanged unless noted) */
 #aboutme {
     background-color: dimgrey;
     padding-bottom: 15px;
-    /*margin: 40px;*/
 }
 
 #aboutmetxt {
     font-size: 14pt;
-    /*text-indent: 5%;*/
 }
 
 .carousel {
     padding-bottom: 20px;
-	/*vertical-align: middle;*/
 }
 
-/*
-#skills-sect-divide {
-	background-color: dimgray;
-	padding-top: 46px;
-}
-*/
-
-/************************************/
-/*Skills section CSS provided by AI*/
+/* Skills Section */
 #skillsContent {
     display: flex;
     flex-direction: column;
@@ -141,20 +151,13 @@ ul {
 .skill-item div {
     flex-grow: 1;
 }
-/************************************/
 
 #skillsCard {
     font-size: 15pt;
-    /*color: darkgrey;*/
     background-color: #1d3030;
     padding-top: 42px;
     padding-bottom: 20px;
 }
-
-#skillstxt {
-
-}
-
 
 #projects-sect-divide {
     padding-top: 46px;
@@ -164,43 +167,32 @@ ul {
     padding-top: 35px;
 }
 
-
-
-
-/*GIS MAP LAYOUTS SECTIONS*/
-
+/* GIS Map Layouts */
 .map-container {
-  position: relative;
-  width: 100%;
-  max-width: 850px; /* Approx 11" at 75dpi - adjust as needed */
-  margin: 0 auto;
-  overflow: hidden;
+    position: relative;
+    width: 100%;
+    max-width: 850px;
+    margin: 0 auto;
+    overflow: hidden;
 }
 
 .map-container img {
-  height: auto;
-  object-fit: contain;
-  max-height: 80vh; /* Limits height to 80% of viewport height */
+    height: auto;
+    object-fit: contain;
+    max-height: 80vh;
 }
 
-/* Media queries for responsiveness */
 @media (max-width: 768px) {
-  .map-container {
-    max-width: 100%;
-    padding: 0 15px;
-  }
-  
-  .map-container img {
-    max-height: 60vh; /* Smaller height on mobile */
-  }
+    .map-container {
+        max-width: 100%;
+        padding: 0 15px;
+    }
+    .map-container img {
+        max-height: 60vh;
+    }
 }
 
-
-
-
-
-/*bonesball dice baseball*/
-
+/* BonesBall Dice Baseball */
 .game-container {
     max-width: 600px;
     margin: 20px auto;
@@ -216,24 +208,18 @@ ul {
     overflow-y: auto;
     white-space: pre-wrap;
     text-align: left;
-    color: #ffffff; /* Default text color white */
+    color: #ffffff;
 }
 
 .text-limegreen {
-    color: #32CD32; /* Custom limegreen for outs and scores */
+    color: #32CD32;
 }
 
 .btn-primary {
     padding: 10px 20px;
 }
 
-
-
-
-
-
-/*SPEED TRAINER METRONOME*/
-
+/* Speed Trainer Metronome */
 .metronome-container {
     padding: 20px;
 }
@@ -250,7 +236,7 @@ ul {
 }
 
 .circle.active {
-    background-color: #dc3545; /* Bootstrap danger red */
+    background-color: #dc3545;
 }
 
 .circle.emphasis {
@@ -262,21 +248,18 @@ ul {
     margin: 20px auto;
 }
 
-
-/* Custom slider thumb styling */
 .form-range::-webkit-slider-thumb {
-    background-color: #32CD32; /* Lime green */
+    background-color: #32CD32;
 }
 
 .form-range::-moz-range-thumb {
-    background-color: #32CD32; /* Lime green */
+    background-color: #32CD32;
 }
 
 .form-range::-ms-thumb {
-    background-color: #32CD32; /* Lime green */
+    background-color: #32CD32;
 }
 
-/* Optional: Improve slider appearance */
 .form-range:focus::-webkit-slider-thumb {
     box-shadow: 0 0 0 1px #fff, 0 0 0 0.25rem rgba(50, 205, 50, 0.25);
 }
@@ -289,12 +272,7 @@ ul {
     box-shadow: 0 0 0 1px #fff, 0 0 0 0.25rem rgba(50, 205, 50, 0.25);
 }
 
-
-
-
-
-/*Contact Section*/
-
+/* Contact Section */
 #contact-sect-divide {
     padding-top: 40px;
 }
@@ -304,11 +282,7 @@ ul {
     padding-bottom: 15px;
 }
 
-#email {
-    font-size: 14pt;
-}
-
-#upwork {
+#email, #upwork {
     font-size: 14pt;
 }
 
@@ -318,86 +292,23 @@ a.contact {
 }
 
 a:hover {
-    color: #28a745; /*Bootstrap "Success" Green Hex*/
-    /*color: color: #42ba96; light green*/
-    /*color: darkgrey;*/
+    color: #28a745;
 }
 
 a:active {
     color: darkgreen;
 }
 
-footer {
-    background-color: darkslategrey;
-    color: #ffffff;
-    margin-top: 30px;
-    position: fixed;
-    left: 0px;
-    bottom: 0px;
-    height: 25px;
-    width: 100%;
-}
-/*Styling for NEW contact form
-#contact {
-    background-color: #f8f9fa; /* Light gray background */
-  /*  padding: 50px 0;
-}
-
-.form-control, .form-select {
-    border-radius: 5px;
-}
-
-.btn-primary {
-    padding: 10px 20px;
-}*/
-
-/*W3 Over-rides*/
-/*Line 117*/
-/*FIX THIS: Not working as an over-ride*/
-.w3-animate-fading, .not-invisible {
-{animation:fading 2s infinite}@keyframes fading{0%{opacity:0}50%{opacity:0.25}100%{opacity:0}};
-}
-
-
-/*Train GIF Color Inversion*/
-.dark-train-gif {
-    filter: invert(1);
-    transition: 1s;
-}
-
-/*
-    .accordion-button {
-        color: #fff;
-        background-color: #198754;
-        text-align: center;
-        justify-content: center;
-        outline: none;
-        border: none;
-        box-shadow: none;
-    }
-    .accordion-button:focus {
-        outline: none;
-        box-shadow: none;
-    }
-    .accordion-button::after {
-        filter: invert(1); /* Inverts the color of the arrow */
-/*
-    }
-    .accordion-button:not(.collapsed) {
-        color: #fff;
-        background-color: #198754;
-    }
-*/
-
+/* Accordion */
 .accordion-button {
     color: #fff;
     background-color: #198754;
     outline: none;
     border: none;
     box-shadow: none;
-    display: flex;          
-    align-items: center;    
-    padding: 1rem;          
+    display: flex;
+    align-items: center;
+    padding: 1rem;
 }
 
 .accordion-button:focus {
@@ -414,7 +325,6 @@ footer {
     background-color: #198754;
 }
 
-/* Accordion bottom margin */
 #accordionExample {
     margin-bottom: 1.5rem;
 }
