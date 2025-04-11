@@ -49,6 +49,9 @@ ul { font-family: Verdana, Gadget, sans-serif; }
 
 .navbar-nav { text-align: center; }
 .nav-link { color: #d3d3d3; }
+.dropdown-menu { background-color: #343a40; }
+.dropdown-item { color: #d3d3d3; }
+.dropdown-item:hover { background-color: #495057; color: #ffffff; }
 
 /* Section Divider Images */
 #aboutme-sect-divide img {
@@ -56,13 +59,238 @@ ul { font-family: Verdana, Gadget, sans-serif; }
     height: auto;
 }
 
-/* Carousel */
+/* About Me and Carousel */
+#aboutme {
+    background-color: dimgrey;
+    padding-bottom: 15px;
+}
+
+#aboutmetxt {
+    font-size: 14pt;
+}
+
 #carouselExampleInterval {
     margin-bottom: 20px;
     width: 100%;
     max-width: 400px;
     margin-left: auto;
     margin-right: auto;
+}
+
+@media (max-width: 767px) {
+    #carouselExampleInterval {
+        max-width: 100%;
+        margin-bottom: 20px;
+    }
+    #aboutme .row {
+        flex-direction: column;
+    }
+}
+
+@media (min-width: 768px) {
+    #carouselExampleInterval {
+        margin-left: 20px;
+    }
+}
+
+/* Skills Section */
+#skillsCard {
+    font-size: 15pt;
+    background-color: #1d3030;
+    padding-top: 42px;
+    padding-bottom: 20px;
+    max-width: 900px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+#skillsContent {
+    display: flex;
+    flex-direction: column;
+}
+
+.skill-item {
+    display: flex;
+    align-items: flex-start;
+    margin-bottom: 20px;
+}
+
+.skill-item span {
+    margin-right: 15px;
+    flex-shrink: 0;
+}
+
+.skill-item div {
+    flex-grow: 1;
+}
+
+/* Projects Section */
+#projects {
+    background-color: dimgrey;
+    padding-top: 35px;
+    padding-bottom: 15px;
+}
+
+#projects-sect-divide {
+    padding-top: 46px;
+}
+
+/* GIS Map Layouts */
+.map-container {
+    position: relative;
+    width: 100%;
+    max-width: 850px;
+    margin: 0 auto;
+    overflow: hidden;
+}
+
+.map-container img {
+    height: auto;
+    object-fit: contain;
+    max-height: 80vh;
+}
+
+@media (max-width: 768px) {
+    .map-container {
+        max-width: 100%;
+        padding: 0 15px;
+    }
+    .map-container img {
+        max-height: 60vh;
+    }
+}
+
+/* BonesBall Dice Baseball */
+.game-container {
+    max-width: 600px;
+    margin: 20px auto;
+}
+
+.game-output {
+    font-family: monospace;
+    background-color: #000000;
+    padding: 10px;
+    border-radius: 5px;
+    min-height: 200px;
+    max-height: 400px;
+    overflow-y: auto;
+    white-space: pre-wrap;
+    text-align: left;
+    color: #ffffff;
+}
+
+.text-limegreen {
+    color: #32CD32;
+}
+
+/* Speed Trainer Metronome */
+.metronome-container {
+    padding: 20px;
+}
+
+.circle {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    background-color: #495057;
+    margin: 10px;
+    display: inline-block;
+    cursor: pointer;
+    transition: all 0.2s;
+}
+
+.circle.active {
+    background-color: #dc3545;
+}
+
+.circle.emphasis {
+    border: 3px solid #ffc107;
+}
+
+.controls {
+    max-width: 600px;
+    margin: 20px auto;
+}
+
+.form-range::-webkit-slider-thumb {
+    background-color: #32CD32;
+}
+
+.form-range::-moz-range-thumb {
+    background-color: #32CD32;
+}
+
+.form-range::-ms-thumb {
+    background-color: #32CD32;
+}
+
+.form-range:focus::-webkit-slider-thumb {
+    box-shadow: 0 0 0 1px #fff, 0 0 0 0.25rem rgba(50, 205, 50, 0.25);
+}
+
+.form-range:focus::-moz-range-thumb {
+    box-shadow: 0 0 0 1px #fff, 0 0 0 0.25rem rgba(50, 205, 50, 0.25);
+}
+
+.form-range:focus::-ms-thumb {
+    box-shadow: 0 0 0 1px #fff, 0 0 0 0.25rem rgba(50, 205, 50, 0.25);
+}
+
+/* Contact Section */
+#contact-sect-divide {
+    padding-top: 40px;
+}
+
+#contact {
+    background-color: dimgrey;
+    padding-bottom: 15px;
+}
+
+#email, #upwork {
+    font-size: 14pt;
+}
+
+a.contact {
+    text-decoration: underline;
+    color: #ffffff;
+}
+
+a:hover {
+    color: #28a745;
+}
+
+a:active {
+    color: darkgreen;
+}
+
+/* Accordion */
+.accordion-button {
+    color: #fff;
+    background-color: #198754;
+    outline: none;
+    border: none;
+    box-shadow: none;
+    display: flex;
+    align-items: center;
+    padding: 1rem;
+}
+
+.accordion-button:focus {
+    outline: none;
+    box-shadow: none;
+}
+
+.accordion-button::after {
+    filter: invert(1);
+}
+
+.accordion-button:not(.collapsed) {
+    color: #fff;
+    background-color: #198754;
+}
+
+#accordionExample {
+    margin-bottom: 1.5rem;
 }
 
 /* Footer */
@@ -84,46 +312,4 @@ footer {
     .navbar-toggler { margin-right: 10px; }
     #aboutme-sect-divide img { max-width: 90%; }
     #tagline h1 { font-size: 30px; }
-    #carouselExampleInterval { max-width: 100%; }
 }
-
-/* Additional Styles */
-#aboutme { background-color: dimgrey; padding-bottom: 15px; }
-#aboutmetxt { font-size: 14pt; }
-.carousel { padding-bottom: 20px; }
-#skillsContent { display: flex; flex-direction: column; }
-.skill-item { display: flex; align-items: flex-start; margin-bottom: 20px; }
-.skill-item span { margin-right: 15px; flex-shrink: 0; }
-.skill-item div { flex-grow: 1; }
-#skillsCard { font-size: 15pt; background-color: #1d3030; padding-top: 42px; padding-bottom: 20px; }
-#projects-sect-divide { padding-top: 46px; }
-#projects { padding-top: 35px; }
-.map-container { position: relative; width: 100%; max-width: 850px; margin: 0 auto; overflow: hidden; }
-.map-container img { height: auto; object-fit: contain; max-height: 80vh; }
-@media (max-width: 768px) { .map-container { max-width: 100%; padding: 0 15px; } .map-container img { max-height: 60vh; } }
-.game-container { max-width: 600px; margin: 20px auto; }
-.game-output { font-family: monospace; background-color: #000000; padding: 10px; border-radius: 5px; min-height: 200px; max-height: 400px; overflow-y: auto; white-space: pre-wrap; text-align: left; color: #ffffff; }
-.text-limegreen { color: #32CD32; }
-.btn-primary { padding: 10px 20px; }
-.metronome-container { padding: 20px; }
-.circle { width: 50px; height: 50px; border-radius: 50%; background-color: #495057; margin: 10px; display: inline-block; cursor: pointer; transition: all 0.2s; }
-.circle.active { background-color: #dc3545; }
-.circle.emphasis { border: 3px solid #ffc107; }
-.controls { max-width: 600px; margin: 20px auto; }
-.form-range::-webkit-slider-thumb { background-color: #32CD32; }
-.form-range::-moz-range-thumb { background-color: #32CD32; }
-.form-range::-ms-thumb { background-color: #32CD32; }
-.form-range:focus::-webkit-slider-thumb { box-shadow: 0 0 0 1px #fff, 0 0 0 0.25rem rgba(50, 205, 50, 0.25); }
-.form-range:focus::-moz-range-thumb { box-shadow: 0 0 0 1px #fff, 0 0 0 0.25rem rgba(50, 205, 50, 0.25); }
-.form-range:focus::-ms-thumb { box-shadow: 0 0 0 1px #fff, 0 0 0 0.25rem rgba(50, 205, 50, 0.25); }
-#contact-sect-divide { padding-top: 40px; }
-#contact { background-color: dimgrey; padding-bottom: 15px; }
-#email, #upwork { font-size: 14pt; }
-a.contact { text-decoration: underline; color: #ffffff; }
-a:hover { color: #28a745; }
-a:active { color: darkgreen; }
-.accordion-button { color: #fff; background-color: #198754; outline: none; border: none; box-shadow: none; display: flex; align-items: center; padding: 1rem; }
-.accordion-button:focus { outline: none; box-shadow: none; }
-.accordion-button::after { filter: invert(1); }
-.accordion-button:not(.collapsed) { color: #fff; background-color: #198754; }
-#accordionExample { margin-bottom: 1.5rem; }
