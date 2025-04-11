@@ -44,7 +44,7 @@
 </head>
 
 <body>
-    <!-- Navbar -->
+    <!-- Navbar with Dropdown -->
     <nav class="navbar fixed-top navbar-expand-md bg-dark navbar-dark">
         <div class="container-fluid">
             <a class="navbar-brand" href="index.html">Nick Charpentier</a>
@@ -59,8 +59,16 @@
                     <li class="nav-item">
                         <a class="nav-link" href="#skillsCard">Studies</a>
                     </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#projects-sect-divide">Projects</a>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#projects-sect-divide" id="navbarDropdownMenuLink" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                            Projects
+                        </a>
+                        <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                            <li><a class="dropdown-item" href="#gis-maps">GIS Map Layouts</a></li>
+                            <li><a class="dropdown-item" href="#web-dev">Web Dev Projects</a></li>
+                            <li><a class="dropdown-item" href="#bonesball">BonesBall JS Dice Game</a></li>
+                            <li><a class="dropdown-item" href="#metronome">Speed Trainer JS Metronome</a></li>
+                        </ul>
                     </li>
                     <li class="nav-item">
                         <a class="nav-link" href="#contact">Contact</a>
@@ -88,32 +96,8 @@
     <!-- About Me Section -->
     <div class="container-fluid" id="aboutme">
         <h2>about me</h2>
-        <div id="carouselExampleInterval" class="carousel slide col-12 col-md-4 mx-auto align-middle" data-bs-ride="carousel">
-            <div class="carousel-inner rounded vertical-center">
-                <div class="carousel-item active">
-                    <img src="images/Headshot1.jpg" class="d-block w-100 rounded" alt="Image 1">
-                </div>
-                <div class="carousel-item">
-                    <img src="images/Headshot2.jpg" class="d-block w-100 rounded" alt="Image 2">
-                </div>
-                <div class="carousel-item">
-                    <img src="images/Headshot3.jpg" class="d-block w-100 rounded" alt="Image 3">
-                </div>
-                <div class="carousel-item">
-                    <img src="images/Headshot4.jpg" class="d-block w-100 rounded" alt="Image 4">
-                </div>
-            </div>
-            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleInterval" data-bs-slide="prev">
-                <span class="fas fa-arrow-alt-circle-left fa-2x" aria-hidden="true"></span>
-                <span class="visually-hidden">Previous</span>
-            </button>
-            <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleInterval" data-bs-slide="next">
-                <span class="fas fa-arrow-alt-circle-right fa-2x" aria-hidden="true"></span>
-                <span class="visually-hidden">Next</span>
-            </button>
-        </div>
         <div class="row justify-content-center">
-            <div class="col-8 vertical-center">
+            <div class="col-12 col-md-8 order-2 order-md-1 vertical-center">
                 <p id="aboutmetxt">
                     Hello! My name is Nick Charpentier - a Certified Drone Operator, GIS Technician, and Amateur Web Developer from Saskatoon, Saskatchewan, Canada.
                     <br><br>
@@ -125,6 +109,32 @@
                     <br><br>
                     In this ePortfolio, I strive to demonstrate the depth of my experience in GIS as well as a thorough approach to web development, both at a Junior level, providing keen attention to detail and creative utilization in geospatial analysis, as well as client-side and server-side languages.
                 </p>
+            </div>
+            <div class="col-12 col-md-4 order-1 order-md-2">
+                <div id="carouselExampleInterval" class="carousel slide mx-auto align-middle" data-bs-ride="carousel">
+                    <div class="carousel-inner rounded vertical-center">
+                        <div class="carousel-item active">
+                            <img src="images/Headshot1.jpg" class="d-block w-100 rounded" alt="Image 1">
+                        </div>
+                        <div class="carousel-item">
+                            <img src="images/Headshot2.jpg" class="d-block w-100 rounded" alt="Image 2">
+                        </div>
+                        <div class="carousel-item">
+                            <img src="images/Headshot3.jpg" class="d-block w-100 rounded" alt="Image 3">
+                        </div>
+                        <div class="carousel-item">
+                            <img src="images/Headshot4.jpg" class="d-block w-100 rounded" alt="Image 4">
+                        </div>
+                    </div>
+                    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleInterval" data-bs-slide="prev">
+                        <span class="fas fa-arrow-alt-circle-left fa-2x" aria-hidden="true"></span>
+                        <span class="visually-hidden">Previous</span>
+                    </button>
+                    <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleInterval" data-bs-slide="next">
+                        <span class="fas fa-arrow-alt-circle-right fa-2x" aria-hidden="true"></span>
+                        <span class="visually-hidden">Next</span>
+                    </button>
+                </div>
             </div>
         </div>
     </div>
@@ -207,225 +217,223 @@
     <div class="container-fluid" id="projects-sect-divide"></div>
 
     <!-- Projects Section -->
-    <div class="container-fluid" align="center">
-        <h2>projects</h2>
-    </div>
-
-    <!-- GIS Map Layouts -->
-    <div class="container-fluid" align="center" id="gis-maps">
-        <h1 class="text-center mb-4">GIS Map Layouts</h1>
-    </div>
-    <div id="carouselMaps" class="carousel slide col-12 col-md-8 mx-auto" data-bs-ride="carousel">
-        <div class="carousel-inner rounded">
-            <div class="carousel-item active">
-                <div class="map-container">
-                    <img src="images/maps/map1.jpg" class="d-block w-100 rounded" alt="Map 1">
-                </div>
-            </div>
-            <div class="carousel-item">
-                <div class="map-container">
-                    <img src="images/maps/map2.jpg" class="d-block w-100 rounded" alt="Map 2">
-                </div>
-            </div>
-            <div class="carousel-item">
-                <div class="map-container">
-                    <img src="images/maps/map3.jpg" class="d-block w-100 rounded" alt="Map 3">
-                </div>
-            </div>
-            <div class="carousel-item">
-                <div class="map-container">
-                    <img src="images/maps/map4.jpg" class="d-block w-100 rounded" alt="Map 4">
-                </div>
-            </div>
-            <div class="carousel-item">
-                <div class="map-container">
-                    <img src="images/maps/map5.jpg" class="d-block w-100 rounded" alt="Map 5">
-                </div>
-            </div>
-            <div class="carousel-item">
-                <div class="map-container">
-                    <img src="images/maps/map7.jpg" class="d-block w-100 rounded" alt="Map 7">
-                </div>
-            </div>
-            <div class="carousel-item">
-                <div class="map-container">
-                    <img src="images/maps/map8.jpg" class="d-block w-100 rounded" alt="Map 8">
-                </div>
-            </div>
-            <div class="carousel-item">
-                <div class="map-container">
-                    <img src="images/maps/map9.jpg" class="d-block w-100 rounded" alt="Map 9">
-                </div>
-            </div>
-            <div class="carousel-item">
-                <div class="map-container">
-                    <img src="images/maps/map10.jpg" class="d-block w-100 rounded" alt="Map 10">
-                </div>
-            </div>
-            <div class="carousel-item">
-                <div class="map-container">
-                    <img src="images/maps/map11.jpg" class="d-block w-100 rounded" alt="Map 11">
-                </div>
-            </div>
-            <div class="carousel-item">
-                <div class="map-container">
-                    <img src="images/maps/map12.jpg" class="d-block w-100 rounded" alt="Map 12">
-                </div>
-            </div>
-            <div class="carousel-item">
-                <div class="map-container">
-                    <img src="images/maps/map13.jpg" class="d-block w-100 rounded" alt="Map 13">
-                </div>
-            </div>
-            <div class="carousel-item">
-                <div class="map-container">
-                    <img src="images/maps/map14.jpg" class="d-block w-100 rounded" alt="Map 14">
-                </div>
-            </div>
-            <div class="carousel-item">
-                <div class="map-container">
-                    <img src="images/maps/map15.jpg" class="d-block w-100 rounded" alt="Map 15">
-                </div>
-            </div>
-            <div class="carousel-item">
-                <div class="map-container">
-                    <img src="images/maps/map16.jpg" class="d-block w-100 rounded" alt="Map 16">
-                </div>
-            </div>
-        </div>
-        <button class="carousel-control-prev" type="button" data-bs-target="#carouselMaps" data-bs-slide="prev">
-            <span class="fas fa-arrow-alt-circle-left fa-2x" aria-hidden="true"></span>
-            <span class="visually-hidden">Previous</span>
-        </button>
-        <button class="carousel-control-next" type="button" data-bs-target="#carouselMaps" data-bs-slide="next">
-            <span class="fas fa-arrow-alt-circle-right fa-2x" aria-hidden="true"></span>
-            <span class="visually-hidden">Next</span>
-        </button>
-    </div>
-
-    <hr>
-
-    <!-- Web Dev Projects -->
-    <div class="container-fluid" align="center" id="web-dev">
-        <h1 class="text-center mb-4">Web Dev Projects</h1>
-    </div>
     <div class="container-fluid" id="projects" align="center">
-        <div class="accordion" id="accordionExample">
-            <div class="accordion-item bg-success text-white">
-                <h5 class="accordion-header" id="headingOne">
-                    <button class="accordion-button text-white bg-success collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
-                        <strong class="w-100 text-center">#1. AllaPratica.com</strong>
-                    </button>
-                </h5>
-                <div id="collapseOne" class="accordion-collapse collapse show" aria-labelledby="headingOne" data-bs-parent="#accordionExample">
-                    <div class="accordion-body">
-                        A clutter-free website for Classical Guitar lessons, built for a client in Sweden, with Symfony, Twig, Bootstrap, and PHP, to provide a stream-lined, user-friendly experience for her and her students.
-                        <br><br>
-                        <a href="https://AllaPratica.com" target="_blank" class="btn btn-light" role="button">Visit: AllaPratica.com</a>
-                    </div>
-                </div>
-            </div>
-            <div class="accordion-item bg-success text-white">
-                <h5 class="accordion-header" id="headingTwo">
-                    <button class="accordion-button collapsed text-white bg-success" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
-                        <strong class="w-100 text-center">#2. Vastlandic.com</strong>
-                    </button>
-                </h5>
-                <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo" data-bs-parent="#accordionExample">
-                    <div class="accordion-body">
-                        Currently undergoing maintenance.
-                        <br><br>
-                        <a href="https://nickcharp.github.io/vastlandic" class="btn btn-light" role="button">Visit: Vastlandic.com</a>
-                    </div>
-                </div>
-            </div>
-            <div class="accordion-item bg-success text-white">
-                <h5 class="accordion-header" id="headingThree">
-                    <button class="accordion-button collapsed text-white bg-success" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
-                        <strong class="w-100 text-center">#3. SaskSandlot.com</strong>
-                    </button>
-                </h5>
-                <div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="headingThree" data-bs-parent="#accordionExample">
-                    <div class="accordion-body">
-                        Currently undergoing maintenance.
-                        <br><br>
-                        <a href="https://nickcharp.github.io/sasksandlot" class="btn btn-light" role="button">Visit: SaskSandlot.com</a>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <div class="mt-4">
-            <hr>
-        </div>
-    </div>
+        <h2>projects</h2>
 
-    <!-- BonesBall Dice Baseball -->
-    <div class="container-fluid" align="center" id="bonesball">
-        <h1 class="text-center mb-4">BonesBall</h1>
-        <h1 class="text-center mb-4">...a Dice Baseball Game</h1>
-    </div>
-    <div class="game-container text-center">
-        <div id="gameOutput" class="game-output" style="background-color: black; color: white;"></div>
-        <button id="rollBonesBtn" class="btn btn-success btn-lg mt-3">Roll Your Bones</button>
-    </div>
-    <script>
-        $(document).ready(function() {
-            $("#rollBonesBtn").click(function() {
-                rollBones();
+        <!-- GIS Map Layouts -->
+        <div class="container-fluid" align="center" id="gis-maps">
+            <h1 class="text-center mb-4">GIS Map Layouts</h1>
+        </div>
+        <div id="carouselMaps" class="carousel slide col-12 col-md-8 mx-auto" data-bs-ride="carousel">
+            <div class="carousel-inner rounded">
+                <div class="carousel-item active">
+                    <div class="map-container">
+                        <img src="images/maps/map1.jpg" class="d-block w-100 rounded" alt="Map 1">
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <div class="map-container">
+                        <img src="images/maps/map2.jpg" class="d-block w-100 rounded" alt="Map 2">
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <div class="map-container">
+                        <img src="images/maps/map3.jpg" class="d-block w-100 rounded" alt="Map 3">
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <div class="map-container">
+                        <img src="images/maps/map4.jpg" class="d-block w-100 rounded" alt="Map 4">
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <div class="map-container">
+                        <img src="images/maps/map5.jpg" class="d-block w-100 rounded" alt="Map 5">
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <div class="map-container">
+                        <img src="images/maps/map7.jpg" class="d-block w-100 rounded" alt="Map 7">
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <div class="map-container">
+                        <img src="images/maps/map8.jpg" class="d-block w-100 rounded" alt="Map 8">
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <div class="map-container">
+                        <img src="images/maps/map9.jpg" class="d-block w-100 rounded" alt="Map 9">
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <div class="map-container">
+                        <img src="images/maps/map10.jpg" class="d-block w-100 rounded" alt="Map 10">
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <div class="map-container">
+                        <img src="images/maps/map11.jpg" class="d-block w-100 rounded" alt="Map 11">
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <div class="map-container">
+                        <img src="images/maps/map12.jpg" class="d-block w-100 rounded" alt="Map 12">
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <div class="map-container">
+                        <img src="images/maps/map13.jpg" class="d-block w-100 rounded" alt="Map 13">
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <div class="map-container">
+                        <img src="images/maps/map14.jpg" class="d-block w-100 rounded" alt="Map 14">
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <div class="map-container">
+                        <img src="images/maps/map15.jpg" class="d-block w-100 rounded" alt="Map 15">
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <div class="map-container">
+                        <img src="images/maps/map16.jpg" class="d-block w-100 rounded" alt="Map 16">
+                    </div>
+                </div>
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#carouselMaps" data-bs-slide="prev">
+                <span class="fas fa-arrow-alt-circle-left fa-2x" aria-hidden="true"></span>
+                <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#carouselMaps" data-bs-slide="next">
+                <span class="fas fa-arrow-alt-circle-right fa-2x" aria-hidden="true"></span>
+                <span class="visually-hidden">Next</span>
+            </button>
+        </div>
+
+        <hr>
+
+        <!-- Web Dev Projects -->
+        <div class="container-fluid" align="center" id="web-dev">
+            <h1 class="text-center mb-4">Web Dev Projects</h1>
+        </div>
+        <div class="container-fluid" align="center">
+            <div class="accordion" id="accordionExample">
+                <div class="accordion-item bg-success text-white">
+                    <h5 class="accordion-header" id="headingOne">
+                        <button class="accordion-button text-white bg-success collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                            <strong class="w-100 text-center">#1. AllaPratica.com</strong>
+                        </button>
+                    </h5>
+                    <div id="collapseOne" class="accordion-collapse collapse show" aria-labelledby="headingOne" data-bs-parent="#accordionExample">
+                        <div class="accordion-body">
+                            A clutter-free website for Classical Guitar lessons, built for a client in Sweden, with Symfony, Twig, Bootstrap, and PHP, to provide a stream-lined, user-friendly experience for her and her students.
+                            <br><br>
+                            <a href="https://AllaPratica.com" target="_blank" class="btn btn-light" role="button">Visit: AllaPratica.com</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="accordion-item bg-success text-white">
+                    <h5 class="accordion-header" id="headingTwo">
+                        <button class="accordion-button collapsed text-white bg-success" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                            <strong class="w-100 text-center">#2. Vastlandic.com</strong>
+                        </button>
+                    </h5>
+                    <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo" data-bs-parent="#accordionExample">
+                        <div class="accordion-body">
+                            Currently undergoing maintenance.
+                            <br><br>
+                            <a href="https://nickcharp.github.io/vastlandic" class="btn btn-light" role="button">Visit: Vastlandic.com</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="accordion-item bg-success text-white">
+                    <h5 class="accordion-header" id="headingThree">
+                        <button class="accordion-button collapsed text-white bg-success" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                            <strong class="w-100 text-center">#3. SaskSandlot.com</strong>
+                        </button>
+                    </h5>
+                    <div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="headingThree" data-bs-parent="#accordionExample">
+                        <div class="accordion-body">
+                            Currently undergoing maintenance.
+                            <br><br>
+                            <a href="https://nickcharp.github.io/sasksandlot" class="btn btn-light" role="button">Visit: SaskSandlot.com</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="mt-4">
+                <hr>
+            </div>
+        </div>
+
+        <!-- BonesBall Dice Baseball -->
+        <div class="container-fluid" align="center" id="bonesball">
+            <h1 class="text-center mb-4">BonesBall</h1>
+            <h1 class="text-center mb-4">...a Dice Baseball Game</h1>
+        </div>
+        <div class="game-container text-center">
+            <div id="gameOutput" class="game-output" style="background-color: black; color: white;"></div>
+            <button id="rollBonesBtn" class="btn btn-success btn-lg mt-3">Roll Your Bones</button>
+        </div>
+        <script>
+            $(document).ready(function() {
+                $("#rollBonesBtn").click(function() {
+                    rollBones();
+                });
             });
-        });
-    </script>
+        </script>
 
-    <hr>
+        <hr>
 
-    <!-- Speed Trainer Metronome -->
-    <div class="container metronome-container" id="metronome">
-        <h1 class="text-center mb-4">Speed Trainer Metronome</h1>
-        <div id="circles" class="text-center mb-4"></div>
-        <div class="controls">
-            <div class="row g-3">
-                <div class="col-md-4">
-                    <label for="bpm" class="form-label" align="center">BPM: <span id="bpmValue">100</span></label>
-                    <input type="range" class="form-range" id="bpm" min="20" max="500" value="100">
+        <!-- Speed Trainer Metronome -->
+        <div class="container metronome-container" id="metronome">
+            <h1 class="text-center mb-4">Speed Trainer Metronome</h1>
+            <div id="circles" class="text-center mb-4"></div>
+            <div class="controls">
+                <div class="row g-3">
+                    <div class="col-md-4">
+                        <label for="bpm" class="form-label" align="center">BPM: <span id="bpmValue">100</span></label>
+                        <input type="range" class="form-range" id="bpm" min="20" max="500" value="100">
+                    </div>
+                    <div class="col-md-4">
+                        <label for="timeSignature" class="form-label" align="center">Time Signature</label>
+                        <select class="form-select" id="timeSignature">
+                            <option value="3">3/4</option>
+                            <option value="4" selected>4/4 (Default)</option>
+                            <option value="5">5/4</option>
+                        </select>
+                    </div>
+                    <div class="col-md-4">
+                        <label for="tone" class="form-label" align="center">Tone</label>
+                        <input type="range" class="form-range" id="tone" min="200" max="1000" value="600">
+                    </div>
                 </div>
-                <div class="col-md-4">
-                    <label for="timeSignature" class="form-label" align="center">Time Signature</label>
-                    <select class="form-select" id="timeSignature">
-                        <option value="3">3/4</option>
-                        <option value="4" selected>4/4 (Default)</option>
-                        <option value="5">5/4</option>
-                    </select>
+                <div class="row g-3 mt-3">
+                    <div class="col-md-4">
+                        <label for="bpmChange" class="form-label" align="center">Tempo Change (BPM)</label>
+                        <input type="number" class="form-control" id="bpmChange" min="0" max="50" value="0">
+                    </div>
+                    <div class="col-md-4">
+                        <label for="bars" class="form-label" align="center">Bars per Tempo Change</label>
+                        <input type="number" class="form-control" id="bars" min="1" value="4">
+                    </div>
+                    <div class="col-md-4">
+                        <label class="form-label" align="center">Increase or Decrease Tempo?</label>
+                        <select class="form-select" id="direction">
+                            <option value="increase">Increase</option>
+                            <option value="decrease">Decrease</option>
+                        </select>
+                    </div>
                 </div>
-                <div class="col-md-4">
-                    <label for="tone" class="form-label" align="center">Tone</label>
-                    <input type="range" class="form-range" id="tone" min="200" max="1000" value="600">
+                <div class="text-center mt-4">
+                    <button id="startStop" class="btn btn-danger">Start</button>
+                    <button id="reset" class="btn btn-danger ms-2">Reset</button>
                 </div>
-            </div>
-            <div class="row g-3 mt-3">
-                <div class="col-md-4">
-                    <label for="bpmChange" class="form-label" align="center">Tempo Change (BPM)</label>
-                    <input type="number" class="form-control" id="bpmChange" min="0" max="50" value="0">
-                </div>
-                <div class="col-md-4">
-                    <label for="bars" class="form-label" align="center">Bars per Tempo Change</label>
-                    <input type="number" class="form-control" id="bars" min="1" value="4">
-                </div>
-                <div class="col-md-4">
-                    <label class="form-label" align="center">Increase or Decrease Tempo?</label>
-                    <select class="form-select" id="direction">
-                        <option value="increase">Increase</option>
-                        <option value="decrease">Decrease</option>
-                    </select>
-                </div>
-            </div>
-            <div class="text-center mt-4">
-                <button id="startStop" class="btn btn-danger">Start</button>
-                <button id="reset" class="btn btn-danger ms-2">Reset</button>
             </div>
         </div>
     </div>
-
-    <hr>
 
     <!-- Contact Section Divider -->
     <div class="container-fluid" id="contact-sect-divide"></div>
