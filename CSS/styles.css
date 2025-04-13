@@ -298,6 +298,13 @@ ul { font-family: Verdana, Gadget, sans-serif; }
     justify-content: center;
 }
 
+.social-icons {
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
+    margin: 10px 0;
+}
+
 #email, #upwork {
     font-size: 14pt;
 }
@@ -360,7 +367,7 @@ footer {
 }
 
 /* Media Query for Mobile */
-@media (max-width: 768px) {
+@media (max-width: 768 antenatal) {
     .navbar-brand { font-size: 16pt; }
     .navbar-toggler { margin-right: 10px; }
     #aboutme-sect-divide img { max-width: 90%; }
