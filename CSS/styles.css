@@ -120,13 +120,27 @@ ul { font-family: Verdana, Gadget, sans-serif; }
     background-color: #1d3030;
     padding: 42px 20px 20px 20px;
     max-width: 1200px;
-    width: 100%;
+    box-sizing: border-box;
 }
 
 @media (max-width: 767px) {
     #skillsCard {
         padding: 20px 15px;
         margin: 0 15px;
+    }
+    #skills-section {
+        padding-left: 0;
+        padding-right: 0;
+    }
+}
+
+@media (min-width: 768px) and (max-width: 991px) {
+    #skillsCard {
+        margin: 0 15px;
+    }
+    #skills-section {
+        padding-left: 0;
+        padding-right: 0;
     }
 }
 
