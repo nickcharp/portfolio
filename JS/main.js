@@ -27,4 +27,10 @@ $(document).ready(function() {
             $('.navbar-collapse').collapse('hide');
         }
     });
+	
+	// Disable right-click on carousel images
+    $('.carousel-inner img').on('contextmenu', function(e) {
+        e.preventDefault();
+        return false;
+    });
 });
