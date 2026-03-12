@@ -1,12 +1,12 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en-US">
 <head>
-    <meta charset="UTF-8">
-    <title>Under Construction | Nick Charpentier</title>
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nick Charpentier</title>
+    <meta name="description" content="GIS Professional and Drone Operator from Saskatoon, Canada">
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
 
-
-	<!-- Bootstrap CSS -->
+    <!-- Bootstrap CSS -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
 
     <!-- Custom Fonts -->
@@ -30,108 +30,521 @@
 
     <!-- Custom Scripts -->
     <script type="text/javascript" src="JS/main.js"></script>
-	
 
-	
-	<link rel="icon" type="image/png" href="images/NC_icon.png"/>
-	
-
-    <style>
-        body {
-            margin: 0;
-            height: 100vh;
-            background-color: #000000;
-            font-family: 'Open Sans', Verdana, sans-serif;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            text-align: center;
-            color: #ffffff;
-        }
-
-        .container {
-            background-color: #1f1f1f;
-            padding: 60px 40px;
-            border-radius: 12px;
-            box-shadow: 0 0 25px rgba(50, 205, 50, 0.15);
-            max-width: 500px;
-        }
-
-        h4 {
-            color: #32CD32;
-            font-size: 32px;
-            margin-bottom: 20px;
-            letter-spacing: 1px;
-        }
-
-        p {
-            font-size: 16px;
-            color: #cccccc;
-            margin-top: 0;
-        }
-
-
-        .icon {
-            font-size: 60px;
-            color: #32CD32;
-            margin-bottom: 25px;
-
-            animation: spin 8s linear infinite;
-
-        }
-
-
-        @keyframes spin {
-            from { transform: rotate(0deg); }
-            to { transform: rotate(360deg); }
-        }
-
-
-        .subtle {
-            margin-top: 25px;
-            font-size: 14px;
-            color: #888888;
-        }
-    </style>
+    <link rel="icon" type="image/png" href="images/NC_icon.png"/>
 </head>
 <body>
-
-    <div class="container">
+    <!-- Navbar -->
+    <nav class="navbar fixed-top navbar-expand-md navbar-dark">
 <!--
-		<div>
-			<span class="fab fa-canadian-maple-leaf fa-2x fa-spin"></span>
+	<nav class="navbar fixed-top navbar-expand-md bg-dark navbar-dark">
 -->
+        <div class="container-fluid">
+            <a class="navbar-brand" href="index.html">Nick Charpentier</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="fab fa-canadian-maple-leaf fa-2x fa-spin"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="index.html">About</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#gis-maps">Maps</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#skillsCard">Studies</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#contact">Contact</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
 
-        <div class="icon">
-			<span class="fab fa-canadian-maple-leaf"></span>
+    <!-- Tagline -->
+    <div class="container-fluid" id="tagline" align="center">
+        <hr class="glow animate-breathe">
+		<h1>GIS Professional</h1>
+        <h1>Certified Drone Operator</h1>
+		<hr class="glow animate-breathe">
+    </div>
+
+    <!-- About Me Section -->
+    <div class="container-fluid" id="aboutme">
+        <h2>about</h2>
+        <div class="row justify-content-center">
+            <div class="col-12 col-md-8 order-2 order-md-1">
+                <p id="aboutmetxt">
+                    Nick Charpentier is a Geographic Information Systems (GIS) Practitioner and Certified Drone Operator based in Saskatoon, Saskatchewan. He currently serves as an organizational ArcGIS administrator, leading province-wide geospatial operations supporting environmental monitoring initiatives.
+                    <br><br>
+                    He is a <a href="https://scholars.esri.ca/profile/?uid=Nicholas%20Charpentier" target="_blank" class="btn btn-success btn-sm extlink btntext" role="button" id="upwork">2025 ESRI Canada Scholar</a> whose work focuses on architecting enterprise data workflows, managing spatial databases, integrating LiDAR and satellite-derived change detection, and producing cloud-based and large-scale mapping products with precision and reproducibility.
+                    <br><br>
+                    This portfolio highlights selected <a href="#gis-maps" class="btn btn-success btn-sm extlink btntext" role="button" id="upwork">map layouts</a> consisting of analytical studies and applied geospatial systems that reflect a strong commitment to technical depth, spatial data integrity, and practical implementation.
+                </p>
+            </div>
+            <div class="col-12 col-md-4 order-1 order-md-2">
+                <div id="carouselExampleInterval" class="carousel slide mx-auto" data-bs-ride="carousel">
+                    <div class="carousel-inner rounded">
+                        <div class="carousel-item active">
+                            <img src="images/Headshot1.jpg" class="d-block w-100 rounded" alt="Image 1">
+                        </div>
+                        <div class="carousel-item">
+                            <img src="images/Headshot3.jpg" class="d-block w-100 rounded" alt="Image 2">
+                        </div>
+                        <div class="carousel-item">
+                            <img src="images/Headshot5.jpg" class="d-block w-100 rounded" alt="Image 3">
+                        </div>
+                        <div class="carousel-item">
+                            <img src="images/Headshot2.jpg" class="d-block w-100 rounded" alt="Image 4">
+                        </div>
+                    </div>
+                    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleInterval" data-bs-slide="prev">
+                        <span class="fas fa-arrow-alt-circle-left fa-2x" aria-hidden="true"></span>
+                        <span class="visually-hidden">Previous</span>
+                    </button>
+                    <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleInterval" data-bs-slide="next">
+                        <span class="fas fa-arrow-alt-circle-right fa-2x" aria-hidden="true"></span>
+                        <span class="visually-hidden">Next</span>
+                    </button>
+                </div>
+            </div>
+        </div>
+    </div>
+<!--
+	<br>
+	<br>
+-->
+	<hr class="glow animate-breathe">
+
+    <!-- GIS Map Layouts -->
+    <div class="container-fluid" align="center" id="gis-maps">
+<!--
+	<br>
+-->
+	<br>
+
+        <h2 class="text-center mb-4">gis map layouts</h2>
+    </div>
+    <div id="carouselMaps" class="carousel slide col-12 col-md-8 mx-auto" data-bs-ride="carousel">
+        <div class="carousel-inner rounded">
+			<div class="carousel-item">
+                <div class="map-container">
+                    <img src="images/maps/map00.jpg" class="d-block w-100 rounded" alt="Map 00">
+                </div>
+            </div>
+			<div class="carousel-item active">
+                <div class="map-container">
+					<img src="images/maps/map0.jpg" class="d-block w-100 rounded" alt="Map 0">
+				</div>
+			</div>
+			<div class="carousel-item">
+				<div class="map-container">
+					<img src="images/maps/EsriCert.jpg" class="d-block w-100 rounded" alt="2025 ESRI Canada Scholarship Certificate">
+				</div>
+            </div>
+            <div class="carousel-item">
+                <div class="map-container">
+                    <img src="images/maps/map1.jpg" class="d-block w-100 rounded" alt="Map 1">
+                </div>
+            </div>
+            <div class="carousel-item">
+                <div class="map-container">
+                    <img src="images/maps/map2.jpg" class="d-block w-100 rounded" alt="Map 2">
+                </div>
+            </div>
+            <div class="carousel-item">
+                <div class="map-container">
+                    <img src="images/maps/map3.jpg" class="d-block w-100 rounded" alt="Map 3">
+                </div>
+            </div>
+            <div class="carousel-item">
+                <div class="map-container">
+                    <img src="images/maps/map4.jpg" class="d-block w-100 rounded" alt="Map 4">
+                </div>
+            </div>
+            <div class="carousel-item">
+                <div class="map-container">
+                    <img src="images/maps/map5.jpg" class="d-block w-100 rounded" alt="Map 5">
+                </div>
+            </div>
+            <div class="carousel-item">
+                <div class="map-container">
+                    <img src="images/maps/map6.png" class="d-block w-100 rounded" alt="Map 6">
+                </div>
+            </div>
+            <div class="carousel-item">
+                <div class="map-container">
+                    <img src="images/maps/map7.jpg" class="d-block w-100 rounded" alt="Map 7">
+                </div>
+            </div>
+            <div class="carousel-item">
+                <div class="map-container">
+                    <img src="images/maps/map8.jpg" class="d-block w-100 rounded" alt="Map 8">
+                </div>
+            </div>
+            <div class="carousel-item">
+                <div class="map-container">
+                    <img src="images/maps/map9.jpg" class="d-block w-100 rounded" alt="Map 9">
+                </div>
+            </div>
+            <div class="carousel-item">
+                <div class="map-container">
+                    <img src="images/maps/map10.jpg" class="d-block w-100 rounded" alt="Map 10">
+                </div>
+            </div>
+            <div class="carousel-item">
+                <div class="map-container">
+                    <img src="images/maps/map11.jpg" class="d-block w-100 rounded" alt="Map 11">
+                </div>
+            </div>
+            <div class="carousel-item">
+                <div class="map-container">
+                    <img src="images/maps/map12.jpg" class="d-block w-100 rounded" alt="Map 12">
+                </div>
+            </div>
+            <div class="carousel-item">
+                <div class="map-container">
+                    <img src="images/maps/map13.jpg" class="d-block w-100 rounded" alt="Map 13">
+                </div>
+            </div>
+            <div class="carousel-item">
+                <div class="map-container">
+                    <img src="images/maps/map14.jpg" class="d-block w-100 rounded" alt="Map 14">
+                </div>
+            </div>
+            <div class="carousel-item">
+                <div class="map-container">
+                    <img src="images/maps/map15.jpg" class="d-block w-100 rounded" alt="Map 15">
+                </div>
+            </div>
+            <div class="carousel-item">
+                <div class="map-container">
+                    <img src="images/maps/map16.jpg" class="d-block w-100 rounded" alt="Map 16">
+                </div>
+            </div>
+            <div class="carousel-item">
+                <div class="map-container">
+                    <img src="images/maps/map17.jpg" class="d-block w-100 rounded" alt="Map 17">
+                </div>
+            </div>
+            <div class="carousel-item">
+                <div class="map-container">
+                    <img src="images/maps/map18.jpg" class="d-block w-100 rounded" alt="Map 18">
+                </div>
+            </div>
+            <div class="carousel-item">
+                <div class="map-container">
+                    <img src="images/maps/map19.jpg" class="d-block w-100 rounded" alt="Map 19">
+                </div>
+            </div>
+            <div class="carousel-item">
+                <div class="map-container">
+                    <img src="images/maps/map20.jpg" class="d-block w-100 rounded" alt="Map 20">
+                </div>
+            </div>
+            <div class="carousel-item">
+                <div class="map-container">
+                    <img src="images/maps/map21.png" class="d-block w-100 rounded" alt="Map 21">
+                </div>
+            </div>
+            <div class="carousel-item">
+                <div class="map-container">
+                    <img src="images/maps/map22.png" class="d-block w-100 rounded" alt="Map 22">
+                </div>
+            </div>
+            <div class="carousel-item">
+                <div class="map-container">
+                    <img src="images/maps/map23.png" class="d-block w-100 rounded" alt="Map 23">
+                </div>
+            </div>
+            <div class="carousel-item">
+                <div class="map-container">
+                    <img src="images/maps/map24.png" class="d-block w-100 rounded" alt="Map 24">
+                </div>
+            </div>
+        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#carouselMaps" data-bs-slide="prev">
+            <span class="fas fa-arrow-alt-circle-left fa-2x" aria-hidden="true"></span>
+            <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#carouselMaps" data-bs-slide="next">
+            <span class="fas fa-arrow-alt-circle-right fa-2x" aria-hidden="true"></span>
+            <span class="visually-hidden">Next</span>
+        </button>
+    </div>
+	
+	<br>
+	<br>
+
+    <hr class="glow animate-breathe">
+
+    <!-- Studies Section 1 -->
+    <div class="container-fluid" id="skills-section">
+        <div class="container-fluid card" id="skillsCard">
+			<br>
+            <h2>studies</h2>
+            <div id="skillsContent">
+                <div class="skill-item">
+                    <span class="fas fa-globe-americas fa-2x"></span>
+                    <div>
+                        <strong>Geographic Information Science:</strong>
+                        <ul>
+                            <li><strong>GIS Certification</strong> from Saskatchewan Polytechnic (2024-2025; Graduated with Great Distinction)
+							</li>
+                            
+							<li><strong>Recipient of the <a href="https://scholars.esri.ca/profile/?uid=Nicholas%20Charpentier" target="_blank" class="btn btn-success btn-sm btntext" role="button" id="upwork"> 2025 ESRI Canada GIS Scholarship</a></strong> for research and presentation on:
+							<br><em>
+							“Visualizing Controlled Airspace with Augmented Reality”</em>
+							<br>
+							<br>
+							</li>
+					
+							<a href="https://videos.saskpolytech.ca/media/Visualizing%20Controlled%20AirSpace%20with%20Augmented%20Reality%20-%20Nick%20Charpentier/1_llchp34q" target="_blank"><span class="fas fa-play fa-1x"></span></a>
+							View the 8-minute video presentation here, on <a href="https://videos.saskpolytech.ca/media/Visualizing%20Controlled%20AirSpace%20with%20Augmented%20Reality%20-%20Nick%20Charpentier/1_llchp34q" target="_blank" class="btn btn-success btn-sm btntext" role="button" id="upwork">SaskPolytech.ca</a>
+						
+							<!--
+							<a href="https://videos.saskpolytech.ca/media/Visualizing%20Controlled%20AirSpace%20with%20Augmented%20Reality%20-%20Nick%20Charpentier/1_llchp34q" target="_blank"><span class="fas fa-paper-plane fa-2x"></span></a>
+							-->
+						</ul>
+					</div>
+				</div>
+					<!--
+						<br>
+						<br>
+					-->
+						
+					<div class="skill-item">
+						<div class="row justify-content-center">
+							<div class="col-md-6" align="center">
+								<a href="https://videos.saskpolytech.ca/media/Visualizing%20Controlled%20AirSpace%20with%20Augmented%20Reality%20-%20Nick%20Charpentier/1_llchp34q" target="_blank">
+								<button>
+								<img src="images/AR_vid_site_2.png" width="450" height="auto" alt="SaskPolytech.ca">
+								</button>
+								</a>
+								<br>
+								<p class="caption" align="center"><em>Click the window above to visit the video presentation site.</em></p>
+							</div>
+							
+								<br>
+							
+							<div class="col-md-6" align="center">
+								<a href="https://scholars.esri.ca/profile/?uid=Nicholas%20Charpentier" target="_blank">
+								<button>
+								<img src="images/scholarsite.png" width="450" height="auto" alt="2025 ESRI Canada GIS Scholarship Site">
+								</button>
+								</a>
+								<br>
+								<p class="caption" align="center"><em>Click the window above to visit the ESRI Canada GIS Scholarship site.</em></p>
+							</div>
+						</div>
+					</div>
 
 <!--
-		<div class="icon">
-			<span class="fas fa-regular fa-map"></span>
+					<div class="skill-item">
+						<div class="row justify-content-center">
+							<div class="col-md-6" align="center">
+								<a href="https://videos.saskpolytech.ca/media/Visualizing%20Controlled%20AirSpace%20with%20Augmented%20Reality%20-%20Nick%20Charpentier/1_llchp34q" target="_blank">
+								<button>
+								<img src="images/AR_vid_site_2.png" width="450" height="auto" alt="SaskPolytech.ca">
+								</button>
+								</a>
+								<br>
+								<p class="caption" align="center"><em>Click the window above to visit the video presentation site.</em></p>
+							</div>
+							
+								<br>
+							
+							<div class="col-md-6" align="center">
+								<a href="https://scholars.esri.ca/profile/?uid=Nicholas%20Charpentier" target="_blank">
+								<button>
+								<img src="images/scholarsite.png" width="450" height="auto" alt="2025 ESRI Canada GIS Scholarship Site">
+								</button>
+								</a>
+								<br>
+								<p class="caption" align="center"><em>Click the window above to visit the ESRI Canada GIS Scholarship site.</em></p>
+							</div>
+						</div>
+					</div>
 -->
+					
+					<div class="skill-item">
+						<!--
+						<span class="fas fa-globe-americas fa-2x"></span>
+						<div>
+						-->
+						<ul>
+							
+                            <li><strong>72 ESRI Academy ArcGIS Training Certificates</strong> (2024-2026)
+							</li>
+							
+                            <li><strong>ArcGIS Pro & QGIS:</strong> geospatial data analysis (vector, raster, LiDAR, 3D), database design and management (incl. FTP client data acquisition)
+							</li>
+							
+                            <li><strong>Organizational ArcGIS Online Administration</strong>
+							</li>
+							
+							<li><strong>ArcGIS Online applications:</strong> StoryMaps, Dashboards, Survey123 Connect XLS forms (incl. dynamic JS calculations), Field Maps, Experience Builder, GeoHub development
+							</li>
+							
+							<br>
+							<!--
+							<li><em>Comprehensive StoryMap for Métis Nation-Saskatchewan's "Métis Guardians" program currently in progress, consisting of ice roads, water monitoring, wildfire web map visualizations, and more! See the screenshots below for a limited preview.</em>
+							</li>
+							-->
+							
+                        </ul>
+                    </div>
+                </div>
+				
 <!--
-        <div class="icon">
-			<span class="fas fa-globe-americas"></span>
+				<div class="skill-item">
+						<div class="row justify-content-center">
+							<div class="col-md-6" align="center">
+								<a href="https://videos.saskpolytech.ca/media/Visualizing%20Controlled%20AirSpace%20with%20Augmented%20Reality%20-%20Nick%20Charpentier/1_llchp34q" target="_blank">
+								<button>
+								<img src="images/AR_vid_site_2.png" width="450" height="auto" alt="SaskPolytech.ca">
+								</button>
+								</a>
+								<br>
+								<p class="caption" align="center"><em>Click the window above to visit the video presentation site.</em></p>
+							</div>
+							
+								<br>
+							
+							<div class="col-md-6" align="center">
+								<a href="https://scholars.esri.ca/profile/?uid=Nicholas%20Charpentier" target="_blank">
+								<button>
+								<img src="images/scholarsite.png" width="450" height="auto" alt="2025 ESRI Canada GIS Scholarship Site">
+								</button>
+								</a>
+								<br>
+								<p class="caption" align="center"><em>Click the window above to visit the ESRI Canada GIS Scholarship site.</em></p>
+							</div>
+						</div>
+					</div>
 -->
-<!--		
-		<div class="icon">
-			<span class="fas fa-solid fa-baseball-ball"></span>
--->
-
-		</div>
-
-        <h4>Page Under Construction</h4>
-
-        <p>
-            This GIS portfolio is currently being updated.
-            <br>
-			Please check back soon.
-        </p>
-
-        <div class="subtle">
-            Nick Charpentier © <script>document.write(new Date().getUTCFullYear());</script>
+				
+                <div class="skill-item">
+                    <span class="fas fa-helicopter fa-2x"></span>
+					<!--
+					<span class="fas fa-plane fa-2x"></span>
+					<span class="fas fa-paper-plane"></span>
+					-->
+                    <div>
+                        <strong>Certified Drone Operator:</strong>
+                        <ul>
+                            <li><strong>Transport Canada Pilot Certificate - VLOS Basic Operations</strong></li>
+                            <li>Drone2Map & WebODM image processing, NAV Drone flight planning, DJI Fly, Map Pilot Pro</li>
+                        </ul>
+                    </div>
+                </div>
+				
+				 <div class="skill-item">
+                    <span class="fas fa-satellite fa-2x"></span>
+                    <div>
+                        <strong>Remote Sensing (Earth Observation)</strong>
+                        <ul>
+                            <li>LiDAR processing and 3D spatial analysis</li>
+                            <li>Satellite-derived change detection workflows</li>
+                        </ul>
+                    </div>
+                </div>
+				
+                <div class="skill-item">
+					<span class="fas fa-code fa-2x"></span>
+					<!--
+					<span class="fas fa-laptop-code fa-2x"></span>
+                    -->
+					<div>
+                        <strong>Programming, Automation, Web Development:</strong>
+                        <ul>
+                            <li>ArcGIS Notebooks, ArcPy (Python), Arcade, R, XML, SQL, ModelBuilder geoprocessing</li>
+							<li>HTML, CSS, Javascript, Bootstrap, PHP, Wordpress CMS Custom Theme Development, GitHub versioning</li>
+                        </ul>
+                    </div>
+                </div>
+				
+				<div class="skill-item">
+                    <span class="fas fa-map fa-2x"></span>
+					<!--
+					<span class="fas fa-compass fa-2x"></span>
+					-->
+                    <div>
+                        <strong>Other Technical Skills:</strong>
+                        <ul>
+                            <li>Interpretation of <strong>large-scale maps</strong> (Topographic, RM, VFR, and Forest Stand Type)</li>
+							<li>Map production with, and maintenance of, large format plotters</li>
+							<li>AutoCAD, Blender 3D, Project Management Software (Monday.com), Google Earth Studio, Avenza Maps, REDapp (FireWI/FireBP Calculator), RTK-GNSS and Garmin GPS receivers</li>
+							<li><strong>MS Office 365 applications:</strong> Excel (incl. VBA macros), Word, SharePoint, Teams, Outlook, PowerPoint</li>
+                        </ul>
+                    </div>
+                </div>
+                
+				<!--
+                <div class="skill-item">
+                    <span class="fab fa-wordpress fa-2x"></span>
+                    <div>
+                        <strong>Wordpress CMS Custom Theme Development</strong>
+                    </div>
+                </div>
+				-->
+				
+                <div class="skill-item">
+                    <span class="fas fa-university fa-2x"></span>
+                    <div>
+                        <strong>Education:</strong>
+                        <ul>
+                            <li>Saskatchewan Polytechnic 2024-2025<br>(Geographic Information Science Certification)</li>
+                            <li>Saskatchewan Polytechnic 2013-2015<br>(Medical Device Reprocessing Certification)</li>
+                            <li>University of Saskatchewan 2006-2011<br>(Geomatics & Psychology Undergraduate Coursework)</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
         </div>
     </div>
 
+    <hr class="glow animate-breathe">
+
+
+    <!-- Contact Info Section -->
+    <div class="container-fluid" id="contact">
+		<br>
+        <h2 align="center">contact info</h2>
+        <div class="container-fluid text-center">
+            <a href="mailto:ncharp.gis@gmail.com" target="_blank"><span class="far fa-envelope fa-3x w3-animate-fading icons-hover"></span></a>
+            <br>
+<!--
+			<br>
+-->
+            <p>Professional Inquiries welcome via eMail or LinkedIn
+<!--
+			<br>
+                <a href="https://linkedin.com/in/nickcharp" target="_blank" class="contact btn btn-success btn-sm" role="button" id="email">linkedin.com/in/nickcharp</a>
+-->
+            </p>
+<!--
+            <br>
+-->
+            <div class="social-icons">
+                <a href="https://linkedin.com/in/nickcharp" target="_blank"><span class="fab fa-linkedin fa-4x  icons-hover"></span></a>
+<!--
+                <a href="https://github.com/nickcharp" target="_blank"><span class="fab fa-github-square fa-4x"></span></a>
+-->
+            </div>
+			<br>
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <footer>
+        <div id="footertxt">
+            <div align="center">
+                <p>Nick Charpentier © <script>document.write(new Date().getUTCFullYear());</script></p>
+            </div>
+        </div>
+    </footer>
 </body>
 </html>
