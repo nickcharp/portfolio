@@ -4,7 +4,7 @@
 }
 
 body {
-    background-color: #696969; /*Formerly #000000*/
+    background-color: #696969; /*Formerly #000000;*/
     color: #ffffff;
     font-size: 16px;
     padding-top: 60px;
@@ -394,4 +394,21 @@ footer {
     .navbar-brand { font-size: 16pt; }
     .navbar-toggler { margin-right: 10px; }
     #tagline h1 { font-size: 30px; }
+}
+
+
+
+
+/* Responsive image buttons */
+.skill-item button {
+    background: none;
+    border: none;
+    padding: 0;
+    max-width: 100%;
+}
+
+.skill-item button img {
+    max-width: 100%;
+    height: auto;
+    display: block;
 }
